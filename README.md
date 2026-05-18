@@ -175,7 +175,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📞 Support
 
 - **Issues**: [GitHub Issues](https://github.com/motazyusuf/flutter_paymob_sdk/issues)
-- **Email**: motazyusuf@gmail.com / moataz.medhat@intcore.com
+- **Email**: motazyusuf@gmail.com 
 
 ## 🙏 Acknowledgments
 
