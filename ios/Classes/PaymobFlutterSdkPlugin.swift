@@ -1,0 +1,150 @@
+import Flutter
+import UIKit
+import PaymobSDK
+
+public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
+    private var pendingResult: FlutterResult?
+    
+    public static func register(with registrar: FlutterPluginRegistrar) {
+        let channel = FlutterMethodChannel(name: "paymob_sdk_flutter", binaryMessenger: registrar.messenger())
+        let instance = PaymobFlutterSdkPlugin()
+        registrar.addMethodCallDelegate(instance, channel: channel)
+    }
+    
+    public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
+        if call.method == "payWithPaymob",
+           let args = call.arguments as? [String: Any] {
+            self.pendingResult = result
+            self.callNativeSDK(arguments: args)
+        } else {
+            result(FlutterMethodNotImplemented)
+        }
+    }
+    
+    private func callNativeSDK(arguments: [String: Any]) {
+        let paymob = PaymobSDK()
+        paymob.delegate = self
+        
+        // MARK: Customization (Optional)
+        if let appName = arguments["appName"] as? String {
+            paymob.paymobSDKCustomization.appName = appName
+        }
+        
+        if let buttonBackgroundColor = arguments["buttonBackgroundColor"] as? NSNumber {
+            let colorInt = buttonBackgroundColor.intValue
+            let color = UIColor(
+                red: CGFloat((colorInt >> 16) & 0xFF) / 255.0,
+                green: CGFloat((colorInt >> 8) & 0xFF) / 255.0,
+                blue: CGFloat(colorInt & 0xFF) / 255.0,
+                alpha: CGFloat((colorInt >> 24) & 0xFF) / 255.0
+            )
+            paymob.paymobSDKCustomization.buttonBackgroundColor = color
+        }
+        
+        if let buttonTextColor = arguments["buttonTextColor"] as? NSNumber {
+            let colorInt = buttonTextColor.intValue
+            let color = UIColor(
+                red: CGFloat((colorInt >> 16) & 0xFF) / 255.0,
+                green: CGFloat((colorInt >> 8) & 0xFF) / 255.0,
+                blue: CGFloat(colorInt & 0xFF) / 255.0,
+                alpha: CGFloat((colorInt >> 24) & 0xFF) / 255.0
+            )
+            paymob.paymobSDKCustomization.buttonTextColor = color
+        }
+        
+        if let saveCardDefault = arguments["saveCardDefault"] as? Bool {
+            paymob.paymobSDKCustomization.saveCardDefault = saveCardDefault
+        }
+        
+        if let showSaveCard = arguments["showSaveCard"] as? Bool {
+            paymob.paymobSDKCustomization.showSaveCard = showSaveCard
+        }
+        
+        // MARK: - Call SDK
+        if let publicKey = arguments["publicKey"] as? String,
+           let clientSecret = arguments["clientSecret"] as? String {
+            
+            guard let topVC = UIApplication.shared.topMostViewController() else {
+                print("❌ Could not find a top view controller to present from.")
+                self.pendingResult?(FlutterError(
+                    code: "VIEW_ERROR",
+                    message: "Could not find a top view controller to present from.",
+                    details: nil
+                ))
+                self.pendingResult = nil
+                return
+            }
+            
+            do {
+                try paymob.presentPayVC(
+                    VC: topVC,
+                    PublicKey: publicKey,
+                    ClientSecret: clientSecret
+                )
+                print("✅ Paymob SDK presented successfully")
+            } catch {
+                print("❌ PaymobSDK failed to start: \(error)")
+                self.pendingResult?(FlutterError(
+                    code: "PAYMOB_ERROR",
+                    message: error.localizedDescription,
+                    details: nil
+                ))
+                self.pendingResult = nil
+            }
+        } else {
+            print("⚠️ Missing publicKey or clientSecret in arguments")
+            self.pendingResult?(FlutterError(
+                code: "INVALID_ARGS",
+                message: "publicKey and clientSecret are required",
+                details: nil
+            ))
+            self.pendingResult = nil
+        }
+    }
+}
+
+// MARK: - PaymobSDKDelegate
+extension PaymobFlutterSdkPlugin: PaymobSDKDelegate {
+    public func transactionRejected(message: String) {
+        print("❌ [PaymobSDK] Transaction Rejected: \(message)")
+        self.pendingResult?(["status": "Rejected"])
+        self.pendingResult = nil
+    }
+    
+    public func transactionAccepted(transactionDetails: [String: Any]) {
+        print("✅ [PaymobSDK] Transaction Accepted")
+        print("📦 Details: \(transactionDetails)")
+        self.pendingResult?(["status": "Successful", "details": transactionDetails])
+        self.pendingResult = nil
+    }
+    
+    public func transactionPending() {
+        print("⏳ [PaymobSDK] Transaction Pending")
+        self.pendingResult?(["status": "Pending"])
+        self.pendingResult = nil
+    }
+}
+
+// Helper extension to find the top-most view controller in the app.
+extension UIApplication {
+    func topMostViewController() -> UIViewController? {
+        let keyWindow: UIWindow?
+        
+        if #available(iOS 13.0, *) {
+            keyWindow = self.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first { $0.isKeyWindow }
+        } else {
+            keyWindow = self.keyWindow
+        }
+        
+        var topController = keyWindow?.rootViewController
+        
+        while let presentedViewController = topController?.presentedViewController {
+            topController = presentedViewController
+        }
+        
+        return topController
+    }
+}
