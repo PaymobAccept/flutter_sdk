@@ -1,0 +1,1074 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PaymobSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import CoreImage
+import DeveloperToolsSupport
+import Foundation
+import Network
+import ObjectiveC
+import PassKit
+@_exported import PaymobSDK
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct CheckBoxColor {
+  public init(activeColor: UIKit.UIColor, inactiveColor: UIKit.UIColor, inactiveBorderColor: UIKit.UIColor, checkMarkColor: UIKit.UIColor)
+}
+@_inheritsConvenienceInitializers public class CheckboxButtonContainer : RadioCheckboxBaseContainer<CheckboxButton> {
+  weak public var delegate: (any CheckboxButtonDelegate)? {
+    get
+    set
+  }
+  @discardableResult
+  override public func addButton(_ button: CheckboxButtonContainer.Kind) -> Swift.Bool
+  public var checkboxButtonColor: CheckBoxColor? {
+    get
+    set
+  }
+  public var checkboxLineStyle: CheckboxLineStyle? {
+    get
+    set
+  }
+  public func setEachCheckboxButtonColor(_ body: (CheckboxButtonContainer.Kind) -> CheckBoxColor)
+  public func setEachCheckboxButtonLineStyle(_ body: (CheckboxButtonContainer.Kind) -> CheckboxLineStyle)
+  override public init(_ buttons: [CheckboxButton] = super)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(tvOS, unavailable)
+@_Concurrency.MainActor @preconcurrency public class KeyboardLayoutConstraint : UIKit.NSLayoutConstraint {
+  @available(tvOS, unavailable)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+}
+open class FPNCountryRepository {
+  open var locale: Foundation.Locale
+  open var countries: [FPNCountry]
+  public init(locale: Foundation.Locale = Locale.current)
+  open func setup(with countryCodes: [FPNCountryCode])
+  open func setup(without countryCodes: [FPNCountryCode])
+  @objc deinit
+}
+@objc public protocol FPNTextFieldDelegate : UIKit.UITextFieldDelegate {
+  @objc func fpnDidSelectCountry(name: Swift.String, dialCode: Swift.String, code: Swift.String)
+  @objc func fpnDidValidatePhoneNumber(textField: FPNTextField, isValid: Swift.Bool)
+  @objc func fpnDisplayCountryList()
+}
+@_hasMissingDesignatedInitializers open class FPNUtils {
+  open class func getCurrentCountry() -> FPNCountry?
+  @objc deinit
+}
+public struct RadioButtonColor {
+  public init(active: UIKit.UIColor, inactive: UIKit.UIColor)
+}
+public class NativeSDKStyle {
+  public var fontFamily: Swift.String?
+  public var fontSizeLabel: CoreFoundation.CGFloat?
+  public var fontSizeInputFields: CoreFoundation.CGFloat?
+  public var fontSizePaymentButton: CoreFoundation.CGFloat?
+  public var fontSizeVerifyButton: CoreFoundation.CGFloat?
+  public var fontWeightLabel: UIKit.UIFont.Weight?
+  public var fontWeightInputFields: UIKit.UIFont.Weight?
+  public var fontWeightPaymentButton: UIKit.UIFont.Weight?
+  public var fontWeightVerifyButton: UIKit.UIFont.Weight?
+  public var colorContainer: UIKit.UIColor?
+  public var colorBorderInputFields: UIKit.UIColor?
+  public var colorBorderPaymentButton: UIKit.UIColor?
+  public var colorBorderVerifyButton: UIKit.UIColor?
+  public var colorDisabled: UIKit.UIColor?
+  public var colorError: UIKit.UIColor?
+  public var colorPrimary: UIKit.UIColor?
+  public var colorInputFields: UIKit.UIColor?
+  public var textColorForLabel: UIKit.UIColor?
+  public var textColorForPaymentButton: UIKit.UIColor?
+  public var textColorForVerifyButton: UIKit.UIColor?
+  public var textColorForInputFields: UIKit.UIColor?
+  public var colorForTextPlaceholder: UIKit.UIColor?
+  public var paymentButtonTitle: Swift.String?
+  public var verifyButtonTitle: Swift.String?
+  public var verifyMessageTitle: Swift.String?
+  public var radiusBorder: CoreFoundation.CGFloat?
+  public var containerPadding: CoreFoundation.CGFloat?
+  public init(jsonData: Foundation.Data) throws
+  @objc deinit
+}
+public protocol RadioButtonDelegate : AnyObject {
+  func radioButtonDidSelect(_ button: RadioButton)
+  func radioButtonDidDeselect(_ button: RadioButton)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class RadioButton : RadioCheckboxBaseButton {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any RadioButtonDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var radioCircle: RadioButtonCircleStyle {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var radioButtonColor: RadioButtonColor! {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class DropDown : UIKit.UITextField {
+  @_Concurrency.MainActor @preconcurrency public var selectedIndex: Swift.Int?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var rowHeight: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var rowBackgroundColor: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var selectedRowColor: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var hideOptionsWhenSelect: Swift.Bool
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var isSearchEnable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var listHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency public var rowTextColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var optionArray: [Swift.String] {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var optionImageArray: [Swift.String] {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var optionIds: [Swift.Int]?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var arrowSize: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var arrowColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var checkMarkEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var handleKeyboard: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency public func showList()
+  @_Concurrency.MainActor @preconcurrency public func hideList()
+  @objc @_Concurrency.MainActor @preconcurrency public func touchAction()
+  @_Concurrency.MainActor @preconcurrency public func didSelect(completion: @escaping (_ selectedText: Swift.String, _ index: Swift.Int, _ id: Swift.Int) -> ())
+  @_Concurrency.MainActor @preconcurrency public func listWillAppear(completion: @escaping () -> ())
+  @_Concurrency.MainActor @preconcurrency public func listDidAppear(completion: @escaping () -> ())
+  @_Concurrency.MainActor @preconcurrency public func listWillDisappear(completion: @escaping () -> ())
+  @_Concurrency.MainActor @preconcurrency public func listDidDisappear(completion: @escaping () -> ())
+}
+extension DropDown : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+extension DropDown : UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+extension DropDown : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@objc @_Concurrency.MainActor @preconcurrency open class FPNCountryPicker : UIKit.UIPickerView, UIKit.UIPickerViewDelegate, UIKit.UIPickerViewDataSource {
+  @_Concurrency.MainActor @preconcurrency open var repository: FPNCountryRepository?
+  @_Concurrency.MainActor @preconcurrency open var showPhoneNumbers: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open var didSelect: ((FPNCountry) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(showPhoneNumbers: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency open func setup(repository: FPNCountryRepository)
+  @_Concurrency.MainActor @preconcurrency open func setCountry(_ code: FPNCountryCode)
+  @_Concurrency.MainActor @preconcurrency @objc open func numberOfComponents(in pickerView: UIKit.UIPickerView) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc open func pickerView(_ pickerView: UIKit.UIPickerView, numberOfRowsInComponent component: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc open func pickerView(_ pickerView: UIKit.UIPickerView, viewForRow row: Swift.Int, forComponent component: Swift.Int, reusing view: UIKit.UIView?) -> UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency @objc open func pickerView(_ pickerView: UIKit.UIPickerView, didSelectRow row: Swift.Int, inComponent component: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class PaymobCheckoutView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any PaymobSDKDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var onHeightChanged: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency public func payFromOutside()
+  @objc deinit
+}
+extension PaymobCheckoutView {
+  @_Concurrency.MainActor @preconcurrency public func setPaymentKeys(publicKey: Swift.String?, clientSecret: Swift.String?)
+}
+extension PaymobCheckoutView {
+  @_Concurrency.MainActor @preconcurrency public func configure(uiCustomization: Swift.String?, showAddNewCard: Swift.Bool = true, payFromOutside: Swift.Bool = false, showSaveCard: Swift.Bool = true, saveCardDefault: Swift.Bool = false)
+}
+@objc @_Concurrency.MainActor @preconcurrency open class CheckboxButtonContainerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var buttonContainer: CheckboxButtonContainer {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didAddSubview(_ subview: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func willRemoveSubview(_ subview: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency public func addButton(_ button: CheckboxButtonContainer.Kind)
+  @_Concurrency.MainActor @preconcurrency public func removeButton(_ button: CheckboxButtonContainer.Kind)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor @preconcurrency open class RadioButtonContainerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var buttonContainer: RadioButtonContainer {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didAddSubview(_ subview: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func willRemoveSubview(_ subview: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency public func addButton(_ button: RadioButtonContainer.Kind)
+  @_Concurrency.MainActor @preconcurrency public func removeButton(_ view: RadioButtonContainer.Kind)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PaymobSDKCustomization {
+  public var buttonBackgroundColor: UIKit.UIColor?
+  public var buttonTextColor: UIKit.UIColor?
+  public var appName: Swift.String?
+  public var instapayPaymentType: InstaPayPaymentType
+  public var appIcon: UIKit.UIImage?
+  public var saveCardDefault: Swift.Bool?
+  public var showSaveCard: Swift.Bool?
+  public var showConfirmationPage: Swift.Bool?
+  public var showTransactionResult: Swift.Bool?
+  public var isKeyboardHandlingEnabled: Swift.Bool?
+  @objc deinit
+}
+public struct FPNCountry : Swift.Equatable {
+  public var code: FPNCountryCode
+  public var name: Swift.String
+  public var phoneCode: Swift.String
+  public static func == (lhs: FPNCountry, rhs: FPNCountry) -> Swift.Bool
+}
+public protocol CheckboxButtonDelegate : AnyObject {
+  func chechboxButtonDidSelect(_ button: CheckboxButton)
+  func chechboxButtonDidDeselect(_ button: CheckboxButton)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CheckboxButton : RadioCheckboxBaseButton {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CheckboxButtonDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var checkBoxColor: CheckBoxColor! {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var checkboxLine: CheckboxLineStyle {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency open class FPNTextField : UIKit.UITextField {
+  @objc @_Concurrency.MainActor @preconcurrency open var flagButtonSize: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency open var flagButton: UIKit.UIButton
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var font: UIKit.UIFont? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var textColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var hasPhoneNumberExample: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency open var countryRepository: FPNCountryRepository
+  @_Concurrency.MainActor @preconcurrency open var selectedCountry: FPNCountry? {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var textFieldInputAccessoryView: UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency open var pickerView: FPNCountryPicker {
+    get
+    set
+  }
+  @objc public enum FPNDisplayMode : Swift.Int {
+    case picker
+    case list
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc @_Concurrency.MainActor @preconcurrency open var displayMode: FPNTextField.FPNDisplayMode
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func updateConstraints()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func leftViewRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor @preconcurrency open func getFormattedPhoneNumber(format: FPNFormat) -> Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency open func getFormattedPhoneNumber(format: Swift.Int) -> Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency open func getRawPhoneNumber() -> Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency open func set(phoneNumber: Swift.String)
+  @_Concurrency.MainActor @preconcurrency open func setFlag(countryCode: FPNCountryCode)
+  @objc @_Concurrency.MainActor @preconcurrency open func setFlag(key: FPNOBJCCountryKey)
+  @_Concurrency.MainActor @preconcurrency open func setCountries(excluding countries: [FPNCountryCode])
+  @_Concurrency.MainActor @preconcurrency open func setCountries(including countries: [FPNCountryCode])
+  @objc @_Concurrency.MainActor @preconcurrency open func setCountries(excluding countries: [Swift.Int])
+  @objc @_Concurrency.MainActor @preconcurrency open func setCountries(including countries: [Swift.Int])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class FPNCountryListViewController : UIKit.UITableViewController, UIKit.UISearchResultsUpdating, UIKit.UISearchControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency open var repository: FPNCountryRepository?
+  @_Concurrency.MainActor @preconcurrency open var showCountryPhoneCode: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open var searchController: UIKit.UISearchController
+  @_Concurrency.MainActor @preconcurrency open var didSelect: ((FPNCountry) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency open func setup(repository: FPNCountryRepository)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc open func updateSearchResults(for searchController: UIKit.UISearchController)
+  @_Concurrency.MainActor @preconcurrency @objc open func willDismissSearchController(_ searchController: UIKit.UISearchController)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableView.Style)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol DPOTPViewDelegate {
+  func dpOTPViewAddText(_ text: Swift.String, at position: Swift.Int)
+  func dpOTPViewRemoveText(_ text: Swift.String, at position: Swift.Int)
+  func dpOTPViewChangePositionAt(_ position: Swift.Int)
+  func dpOTPViewBecomeFirstResponder()
+  func dpOTPViewResignFirstResponder()
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class DPOTPView : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var count: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var spacing: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var textColorTextField: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var fontTextField: UIKit.UIFont
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var placeholder: Swift.String
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var placeholderTextColor: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var isCircleTextField: Swift.Bool
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var isBottomLineTextField: Swift.Bool
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var backGroundImageTextField: UIKit.UIImage?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var backGroundColorTextField: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var backGroundColorFilledTextField: UIKit.UIColor?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var borderColorTextField: UIKit.UIColor?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var selectedBorderColorTextField: UIKit.UIColor?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var borderWidthTextField: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var selectedBorderWidthTextField: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var cornerRadiusTextField: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var tintColorTextField: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var shadowRadiusTextField: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var shadowOpacityTextField: Swift.Float
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var shadowOffsetSizeTextField: CoreFoundation.CGSize
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var shadowColorTextField: UIKit.UIColor?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var dismissOnLastEntry: Swift.Bool
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var isSecureTextEntry: Swift.Bool
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var isCursorHidden: Swift.Bool
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic open var isDarkKeyboard: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency dynamic open var textEdgeInsets: UIKit.UIEdgeInsets?
+  @_Concurrency.MainActor @preconcurrency dynamic open var editingTextEdgeInsets: UIKit.UIEdgeInsets?
+  @_Concurrency.MainActor @preconcurrency dynamic open var inputViewForAll: UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency dynamic open var inputAccessoryViewForAll: UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency dynamic open var dpOTPViewDelegate: (any DPOTPViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency dynamic open var keyboardType: UIKit.UIKeyboardType
+  @_Concurrency.MainActor @preconcurrency dynamic open var text: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func prepareForInterfaceBuilder()
+  @discardableResult
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func becomeFirstResponder() -> Swift.Bool
+  @discardableResult
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func resignFirstResponder() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open func validate() -> Swift.Bool
+  @objc deinit
+}
+extension DPOTPView : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+public struct CheckboxLineStyle {
+  public init(checkBoxHeight: CoreFoundation.CGFloat, checkmarkLineWidth: CoreFoundation.CGFloat = -1, padding: CoreFoundation.CGFloat = 6)
+  public init(checkmarkLineWidth: CoreFoundation.CGFloat, padding: CoreFoundation.CGFloat = 6)
+  public init(padding: CoreFoundation.CGFloat = 6)
+  public var size: CoreFoundation.CGSize {
+    get
+  }
+}
+public struct BankCardResponseModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc public enum FPNOBJCCountryKey : Swift.Int {
+  case AF
+  case ZA
+  case AL
+  case DZ
+  case DE
+  case AD
+  case AO
+  case AI
+  case AG
+  case SA
+  case AR
+  case AM
+  case AW
+  case AU
+  case AT
+  case AZ
+  case BS
+  case BH
+  case BD
+  case BB
+  case BE
+  case BZ
+  case BM
+  case BT
+  case BY
+  case BO
+  case BA
+  case BW
+  case BN
+  case BR
+  case BG
+  case BF
+  case BI
+  case BJ
+  case KH
+  case CM
+  case CA
+  case CV
+  case CL
+  case CN
+  case CY
+  case CO
+  case KM
+  case CG
+  case CD
+  case KP
+  case KR
+  case CR
+  case HR
+  case CU
+  case CI
+  case DK
+  case DJ
+  case DM
+  case ES
+  case EE
+  case FJ
+  case FI
+  case FR
+  case GA
+  case GM
+  case GH
+  case GI
+  case GD
+  case GL
+  case GR
+  case GP
+  case GU
+  case GT
+  case GG
+  case GN
+  case GQ
+  case GW
+  case GY
+  case GF
+  case GE
+  case HT
+  case HN
+  case HK
+  case HU
+  case IN
+  case ID
+  case IQ
+  case IR
+  case IE
+  case IS
+  case IL
+  case IT
+  case JM
+  case JP
+  case JE
+  case JO
+  case KZ
+  case KE
+  case KG
+  case KI
+  case KW
+  case RE
+  case LA
+  case LS
+  case LV
+  case LB
+  case LY
+  case LR
+  case LI
+  case LT
+  case LU
+  case MO
+  case MK
+  case MG
+  case MY
+  case MW
+  case MV
+  case ML
+  case MT
+  case MA
+  case MQ
+  case MU
+  case MR
+  case YT
+  case MX
+  case MD
+  case MC
+  case MN
+  case MS
+  case ME
+  case MZ
+  case MM
+  case NA
+  case NR
+  case NI
+  case NE
+  case NG
+  case NU
+  case NO
+  case NC
+  case NZ
+  case NP
+  case OM
+  case UG
+  case UZ
+  case PK
+  case PW
+  case PA
+  case PG
+  case PY
+  case NL
+  case PH
+  case PL
+  case PF
+  case PR
+  case PT
+  case PE
+  case QA
+  case RO
+  case GB
+  case RU
+  case RW
+  case CF
+  case DO
+  case BL
+  case KN
+  case SM
+  case MF
+  case PM
+  case VC
+  case SH
+  case LC
+  case SV
+  case WS
+  case AS
+  case ST
+  case RS
+  case SC
+  case SL
+  case SG
+  case SK
+  case SI
+  case SO
+  case SD
+  case SS
+  case LK
+  case CH
+  case SR
+  case SE
+  case SJ
+  case SZ
+  case SY
+  case SN
+  case TJ
+  case TZ
+  case TW
+  case TD
+  case CZ
+  case IO
+  case PS
+  case TH
+  case TL
+  case TG
+  case TK
+  case TO
+  case TT
+  case TN
+  case TM
+  case TR
+  case TV
+  case UA
+  case UY
+  case VU
+  case VE
+  case VN
+  case WF
+  case YE
+  case ZM
+  case ZW
+  case EG
+  case AE
+  case EC
+  case ER
+  case VA
+  case FM
+  case US
+  case ET
+  case CX
+  case NF
+  case IM
+  case KY
+  case CC
+  case CK
+  case FO
+  case FK
+  case MP
+  case MH
+  case SB
+  case TC
+  case VG
+  case VI
+  case AX
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public let FPNOBJCCountryCode: [FPNOBJCCountryKey : Swift.String]
+public enum PaymobSDKError : Swift.Error {
+  case MissingArgumentError(Swift.String)
+  case ServerError(Swift.String)
+  case JSONParsingError(Swift.String)
+  case Unknown(Swift.String)
+}
+public class PaymobSDK {
+  weak public var delegate: (any PaymobSDKDelegate)?
+  public var paymobSDKCustomization: PaymobSDKCustomization
+  public init()
+  public func presentPayVC(VC: UIKit.UIViewController, PublicKey publicKey: Swift.String?, ClientSecret clientSecret: Swift.String?) throws
+  @objc deinit
+}
+extension Foundation.Bundle {
+  @objc public static var FlagIcons: Foundation.Bundle
+  @objc public static func FlagPhoneNumber() -> Foundation.Bundle
+}
+public enum RadioCheckboxStyle {
+  case rounded(radius: CoreFoundation.CGFloat), square, circle
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency public class RadioCheckboxBaseButton : UIKit.UIButton {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var isOn: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency convenience public init?(type buttonType: UIKit.UIButton.ButtonType)
+  @_Concurrency.MainActor @preconcurrency public var style: RadioCheckboxStyle {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public func updateSelectionState()
+  @objc deinit
+}
+@objc public enum FPNFormat : Swift.Int {
+  case E164
+  case International
+  case National
+  case RFC3966
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct SavedBankCard : Swift.Codable, Swift.Hashable {
+  public let token: Swift.String, maskedPanNumber: Swift.String
+  public let cardType: CardType
+  public var cardCVV: Swift.String?
+  public var cardTypeLogo: UIKit.UIImage {
+    get
+  }
+  public init(token: Swift.String, maskedPanNumber: Swift.String, cardType: CardType)
+  public static func == (a: SavedBankCard, b: SavedBankCard) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct OmanNetResponseModel : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class RadioCheckboxBaseContainer<T> where T : RadioCheckboxBaseButton {
+  public typealias Kind = T
+  public init(_ buttons: [T] = [])
+  public var allButtons: [T] {
+    get
+  }
+  public func addButtons(_ buttons: [T])
+  public func deselectAll()
+  public var selectedButtons: [T] {
+    get
+    set
+  }
+  @discardableResult
+  public func addButton(_ button: T) -> Swift.Bool
+  @discardableResult
+  public func removeButton(_ button: T) -> Swift.Bool
+  public var buttonStyle: RadioCheckboxStyle? {
+    get
+    set
+  }
+  public func setEachButtonStyle(_ body: (T) -> RadioCheckboxStyle)
+  public func compact()
+  @objc deinit
+}
+public protocol PaymobSDKDelegate : AnyObject {
+  func transactionRejected(message: Swift.String)
+  func transactionAccepted(transactionDetails: [Swift.String : Any])
+  func transactionPending()
+}
+public enum FPNCountryCode : Swift.String {
+  case AF
+  case ZA
+  case AL
+  case DZ
+  case DE
+  case AD
+  case AO
+  case AI
+  case AG
+  case SA
+  case AR
+  case AM
+  case AW
+  case AU
+  case AT
+  case AZ
+  case BS
+  case BH
+  case BD
+  case BB
+  case BE
+  case BZ
+  case BM
+  case BT
+  case BY
+  case BO
+  case BA
+  case BW
+  case BN
+  case BR
+  case BG
+  case BF
+  case BI
+  case BJ
+  case KH
+  case CM
+  case CA
+  case CV
+  case CL
+  case CN
+  case CY
+  case CO
+  case KM
+  case CG
+  case CD
+  case KP
+  case KR
+  case CR
+  case HR
+  case CU
+  case CI
+  case DK
+  case DJ
+  case DM
+  case ES
+  case EE
+  case FJ
+  case FI
+  case FR
+  case GA
+  case GM
+  case GH
+  case GI
+  case GD
+  case GL
+  case GR
+  case GP
+  case GU
+  case GT
+  case GG
+  case GN
+  case GQ
+  case GW
+  case GY
+  case GF
+  case GE
+  case HT
+  case HN
+  case HK
+  case HU
+  case IN
+  case ID
+  case IQ
+  case IR
+  case IE
+  case IS
+  case IL
+  case IT
+  case JM
+  case JP
+  case JE
+  case JO
+  case KZ
+  case KE
+  case KG
+  case KI
+  case KW
+  case RE
+  case LA
+  case LS
+  case LV
+  case LB
+  case LY
+  case LR
+  case LI
+  case LT
+  case LU
+  case MO
+  case MK
+  case MG
+  case MY
+  case MW
+  case MV
+  case ML
+  case MT
+  case MA
+  case MQ
+  case MU
+  case MR
+  case YT
+  case MX
+  case MD
+  case MC
+  case MN
+  case MS
+  case ME
+  case MZ
+  case MM
+  case NA
+  case NR
+  case NI
+  case NE
+  case NG
+  case NU
+  case NO
+  case NC
+  case NZ
+  case NP
+  case OM
+  case UG
+  case UZ
+  case PK
+  case PW
+  case PA
+  case PG
+  case PY
+  case NL
+  case PH
+  case PL
+  case PF
+  case PR
+  case PT
+  case PE
+  case QA
+  case RO
+  case GB
+  case RU
+  case RW
+  case CF
+  case DO
+  case BL
+  case KN
+  case SM
+  case MF
+  case PM
+  case VC
+  case SH
+  case LC
+  case SV
+  case WS
+  case AS
+  case ST
+  case RS
+  case SC
+  case SL
+  case SG
+  case SK
+  case SI
+  case SO
+  case SD
+  case SS
+  case LK
+  case CH
+  case SR
+  case SE
+  case SJ
+  case SZ
+  case SY
+  case SN
+  case TJ
+  case TZ
+  case TW
+  case TD
+  case CZ
+  case IO
+  case PS
+  case TH
+  case TL
+  case TG
+  case TK
+  case TO
+  case TT
+  case TN
+  case TM
+  case TR
+  case TV
+  case UA
+  case UY
+  case VU
+  case VE
+  case VN
+  case WF
+  case YE
+  case ZM
+  case ZW
+  case EG
+  case AE
+  case EC
+  case ER
+  case VA
+  case FM
+  case US
+  case ET
+  case CX
+  case NF
+  case IM
+  case KY
+  case CC
+  case CK
+  case FO
+  case FK
+  case MP
+  case MH
+  case SB
+  case TC
+  case VG
+  case VI
+  case AX
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CardType : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case Unknown, OmanNet, JCB, Meeza, Maestro, Amex, Visa, MasterCard
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CardType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [CardType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum InstaPayPaymentType {
+  case Intent
+  case QrCode
+  public static func == (a: InstaPayPaymentType, b: InstaPayPaymentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class AssetsProvider {
+  public static func image(named: Swift.String) -> UIKit.UIImage?
+  public static func color(named: Swift.String) -> UIKit.UIColor?
+  @objc deinit
+}
+public struct RadioButtonCircleStyle {
+  public init(outerCircle: CoreFoundation.CGFloat = 16, innerCircle: CoreFoundation.CGFloat = 7, outerCircleBorder: CoreFoundation.CGFloat = 2, contentPadding: CoreFoundation.CGFloat = 6)
+  public init(outerCircle: CoreFoundation.CGFloat, innerCircle: CoreFoundation.CGFloat)
+  public init(outerCircle: CoreFoundation.CGFloat, innerCircle: CoreFoundation.CGFloat, outerCircleBorder: CoreFoundation.CGFloat)
+}
+@_inheritsConvenienceInitializers public class RadioButtonContainer : RadioCheckboxBaseContainer<RadioButton> {
+  weak public var delegate: (any RadioButtonDelegate)? {
+    get
+    set
+  }
+  public var selectedButton: RadioButtonContainer.Kind? {
+    get
+    set
+  }
+  @discardableResult
+  override public func addButton(_ button: RadioButtonContainer.Kind) -> Swift.Bool
+  public var radioButtonColor: RadioButtonColor? {
+    get
+    set
+  }
+  public var radioCircleStyle: RadioButtonCircleStyle? {
+    get
+    set
+  }
+  public func setEachRadioButtonColor(_ body: (RadioButtonContainer.Kind) -> RadioButtonColor)
+  public func setEachRadioButtonCircleStyle(_ body: (RadioButtonContainer.Kind) -> RadioButtonCircleStyle)
+  override public init(_ buttons: [RadioButton] = super)
+  @objc deinit
+}
+public struct ValuPayResponseModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension FPNTextField.FPNDisplayMode : Swift.Equatable {}
+extension FPNTextField.FPNDisplayMode : Swift.Hashable {}
+extension FPNTextField.FPNDisplayMode : Swift.RawRepresentable {}
+extension FPNOBJCCountryKey : Swift.Equatable {}
+extension FPNOBJCCountryKey : Swift.Hashable {}
+extension FPNOBJCCountryKey : Swift.RawRepresentable {}
+extension FPNFormat : Swift.Equatable {}
+extension FPNFormat : Swift.Hashable {}
+extension FPNFormat : Swift.RawRepresentable {}
+extension FPNCountryCode : Swift.Equatable {}
+extension FPNCountryCode : Swift.Hashable {}
+extension FPNCountryCode : Swift.RawRepresentable {}
+extension CardType : Swift.Equatable {}
+extension CardType : Swift.Hashable {}
+extension CardType : Swift.RawRepresentable {}
+extension InstaPayPaymentType : Swift.Equatable {}
+extension InstaPayPaymentType : Swift.Hashable {}

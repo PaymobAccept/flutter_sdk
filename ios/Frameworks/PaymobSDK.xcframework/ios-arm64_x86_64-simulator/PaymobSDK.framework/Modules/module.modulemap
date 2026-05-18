@@ -1,0 +1,11 @@
+framework module PaymobSDK {
+  umbrella header "PaymobSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module PaymobSDK.Swift {
+  header "PaymobSDK-Swift.h"
+  requires objc
+}
