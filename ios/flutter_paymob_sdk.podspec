@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 A Flutter plugin for integrating Paymob payment gateway with native Android and iOS SDKs support.
                        DESC
-  s.homepage         = 'https://github.com/motazyusuf/flutter_paymob_sdk'
+  s.homepage         = 'https://github.com/PaymobAccept/flutter_sdk'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Moataz Medhat Yusuf' => 'motazyusuf@gmail.com' }
+  s.author           = { 'Paymob' => 'support@paymob.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
 

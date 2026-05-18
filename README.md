@@ -174,22 +174,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/motazyusuf/flutter_paymob_sdk/issues)
-- **Email**: motazyusuf@gmail.com 
+- **Documentation**: [Paymob Developers](https://developers.paymob.com/)
+- **Email**: support@paymob.com
 
-## 🙏 Acknowledgments
-
-- Paymob for providing the payment gateway service
-- The Flutter team for the amazing framework
-- All contributors who help improve this package
 
 ## 📈 Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
-
-
-Made with ❤️ by **Moataz Medhat Yusuf**  
-🔗 **[LinkedIn](https://www.linkedin.com/in/moataz-yusuf-4266a3251/)**  
-💻 **[GitHub](https://github.com/motazyusuf)**  
 
 **Star ⭐ this repo if you find it useful!**
