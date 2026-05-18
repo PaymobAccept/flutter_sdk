@@ -1,9 +1,5 @@
 # Paymob Flutter SDK
 
-[![pub package](https://img.shields.io/pub/v/flutter_paymob_sdk.svg)](https://pub.dev/packages/flutter_paymob_sdk)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Creator](https://img.shields.io/badge/Creator-Moataz%20Yusuf-blue)](https://www.linkedin.com/in/moataz-yusuf-4266a3251/)
-
 A comprehensive Flutter plugin for integrating Paymob payment gateway with native Android and iOS SDK support. Accept payments seamlessly and securely in your Flutter applications with full customization support.
 
 ## ✨ Features
@@ -27,7 +23,7 @@ A comprehensive Flutter plugin for integrating Paymob payment gateway with nativ
 dependencies:
   flutter_paymob_sdk:
     git:
-      url: https://github.com/moatazmedhatyusuf/flutter_paymob_sdk_.git
+      url: https://github.com/PaymobAccept/flutter_sdk.git
 ```
 
 Then run:
