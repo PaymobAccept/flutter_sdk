@@ -17,7 +17,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^1.6.0
   talker: ^5.1.16
 
 dev_dependencies:

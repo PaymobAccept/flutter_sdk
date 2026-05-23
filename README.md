@@ -6,14 +6,14 @@ A comprehensive Flutter plugin for integrating Paymob payment gateway with nativ
 
 - 🚀 **Easy Integration** - Simple API with minimal setup required
 - 📱 **Native SDKs** - Uses official Paymob Android and iOS SDKs under the hood
-- 🎨 **Customizable UI** - Customize button colors, app name, and more
+- 🎨 **Customizable UI** - Customize button colors, app name, app logo, and more
 - 💳 **Save Card Feature** - Optional card saving functionality
 - 🔒 **Secure Payments** - Industry-standard security with PCI compliance
 - ✅ **Type-Safe Results** - Strongly typed payment result handling
 - 🌍 **Multi-Currency** - Support for multiple currencies (EGP, USD, etc.)
 - 📊 **Comprehensive Error Handling** - Clear error messages and states
 - 🔄 **Null Safety** - Fully migrated to null-safe Dart
-- 🛡️ **Backend Security Mode** - Optional secure backend integration to protect your secret keys
+- 🛡️ **Backend-First Security** - Secret key stays on your server; the SDK never touches it
 
 ## 🚀 Installation
 
@@ -99,6 +99,8 @@ For full usage examples, API reference, and troubleshooting, see the **[Example 
    - Go to Settings → Payment Integrations
    - Copy your integration ID
 
+Your backend calls the Paymob intention API with the secret key and returns only the `publicKey` and `clientSecret` to the Flutter app.
+
 ### Test Mode
 
 - No real money is charged in test mode
@@ -115,7 +117,6 @@ For full usage examples, API reference, and troubleshooting, see the **[Example 
 1. Switch to live API keys
 2. Use live integration IDs
 3. Complete Paymob verification process
-4. **Always use secure mode** (`useSecureMode: true`)
 
 ## 🌍 Supported Currencies
 
@@ -177,6 +178,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - **Documentation**: [Paymob Developers](https://developers.paymob.com/)
 - **Email**: support@paymob.com
 
+## 🙏 Acknowledgments
+
+- The Flutter team for the amazing framework
+- All contributors who help improve this package
 
 ## 📈 Changelog
 

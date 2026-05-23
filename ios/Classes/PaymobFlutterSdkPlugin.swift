@@ -29,6 +29,14 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
         if let appName = arguments["appName"] as? String {
             paymob.paymobSDKCustomization.appName = appName
         }
+
+        if let assetPath = arguments["iosAppLogo"] as? String {
+            let candidates = [
+                Bundle.main.bundlePath + "/flutter_assets/" + assetPath,
+                Bundle.main.bundlePath + "/Frameworks/App.framework/flutter_assets/" + assetPath,
+            ]
+            paymob.paymobSDKCustomization.appIcon = candidates.compactMap { UIImage(contentsOfFile: $0) }.first
+        }
         
         if let buttonBackgroundColor = arguments["buttonBackgroundColor"] as? NSNumber {
             let colorInt = buttonBackgroundColor.intValue
@@ -55,9 +63,17 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
         if let saveCardDefault = arguments["saveCardDefault"] as? Bool {
             paymob.paymobSDKCustomization.saveCardDefault = saveCardDefault
         }
-        
+
         if let showSaveCard = arguments["showSaveCard"] as? Bool {
             paymob.paymobSDKCustomization.showSaveCard = showSaveCard
+        }
+
+        if let showTransactionResult = arguments["showTransactionResult"] as? Bool {
+            paymob.paymobSDKCustomization.showTransactionResult = showTransactionResult
+        }
+
+        if let isKeyboardHandlingEnabled = arguments["isKeyboardHandlingEnabled"] as? Bool {
+            paymob.paymobSDKCustomization.isKeyboardHandlingEnabled = isKeyboardHandlingEnabled
         }
         
         // MARK: - Call SDK
@@ -106,8 +122,8 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
 // MARK: - PaymobSDKDelegate
 extension PaymobFlutterSdkPlugin: PaymobSDKDelegate {
     public func transactionRejected(message: String) {
-        print("❌ [PaymobSDK] Transaction Rejected: \(message)")
-        self.pendingResult?(["status": "Rejected"])
+        print("❌ [PaymobSDK] Transaction Failed: \(message)")
+        self.pendingResult?(["status": "Failure"])
         self.pendingResult = nil
     }
     

@@ -3,7 +3,9 @@
 Add to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  flutter_paymob_sdk: ^1.0.0
+  flutter_paymob_sdk:
+    git:
+      url: https://github.com/PaymobAccept/flutter_sdk.git
 ```
 
 Then run:
@@ -22,16 +24,12 @@ import 'package:flutter_paymob_sdk/flutter_paymob_sdk.dart';
 final paymobService = PaymobService();
 ```
 
-### 2. Create a payment intention
+### 2. Get credentials from your backend
 
-Choose one mode based on your environment:
-
-#### 🛡️ Secure Mode — Recommended for Production
-
-Keep your secret key on your backend and pass only the resulting credentials to the SDK:
+Your backend calls the Paymob intention API with your secret key and returns the `publicKey` and `clientSecret` to the app. Never put your secret key inside the Flutter app.
 
 ```dart
-// Fetch credentials from your backend
+// Example: fetch credentials from your own backend
 final response = await http.post(
   Uri.parse('https://your-backend.com/api/create-payment-intention'),
   headers: {'Content-Type': 'application/json'},
@@ -51,42 +49,16 @@ final response = await http.post(
 );
 
 final backendCreds = jsonDecode(response.body);
-
-final credentials = await paymobService.createPaymentIntention(
-  useSecureMode: true,
-  publicKey: backendCreds['publicKey'],
-  clientSecret: backendCreds['clientSecret'],
-);
+final publicKey = backendCreds['publicKey'] as String;
+final clientSecret = backendCreds['clientSecret'] as String;
 ```
-
-#### ⚠️ Direct Mode — Development & Testing Only
-
-```dart
-final credentials = await paymobService.createPaymentIntention(
-  useSecureMode: false,
-  secretKey: 'YOUR_SECRET_KEY',
-  publicKey: 'YOUR_PUBLIC_KEY',
-  amount: 100,
-  currency: 'EGP',
-  integrationId: 1234567,
-  billingData: {
-    'first_name': 'Test', 'last_name': 'User',
-    'email': 'test@test.com', 'phone_number': '+201000000000',
-    'apartment': 'NA', 'floor': 'NA', 'street': 'NA',
-    'building': 'NA', 'shipping_method': 'NA', 'postal_code': 'NA',
-    'city': 'Cairo', 'country': 'EG', 'state': 'NA',
-  },
-);
-```
-
-> **Never use Direct Mode in production.** Mobile apps can be decompiled and your secret key extracted.
 
 ### 3. Launch the payment SDK
 
 ```dart
 final result = await paymobService.payWithPaymob(
-  publicKey: credentials['publicKey']!,
-  clientSecret: credentials['clientSecret']!,
+  publicKey: publicKey,
+  clientSecret: clientSecret,
   customization: PaymobCustomization(
     appName: 'My Store',
     buttonBackgroundColor: Colors.blue,
@@ -98,13 +70,12 @@ final result = await paymobService.payWithPaymob(
 
 if (result.isSuccessful) {
   // Payment succeeded
-} else if (result.isRejected) {
-  // Payment was rejected
+} else if (result.isFailure) {
+  // Payment failed
 } else if (result.isPending) {
   // Payment is pending
 }
 ```
-
 
 ---
 
@@ -112,43 +83,89 @@ if (result.isSuccessful) {
 
 ```dart
 PaymobCustomization(
+  // Branding
   appName: 'My Store',
+  androidAppLogo: 'ic_launcher',     // Android: drawable/mipmap resource name
+  iosAppLogo: 'assets/logo.png',     // iOS: Flutter asset path
+
+  // Button
   buttonBackgroundColor: Colors.blue,
   buttonTextColor: Colors.white,
+
+  // Card saving
   showSaveCard: true,
   saveCardDefault: false,
+
+  // Screens
+  showTransactionResult: true,       // Show/hide the built-in result screen after payment
+
+  // iOS only
+  isKeyboardHandlingEnabled: true,   // SDK keyboard avoidance behavior
 )
+```
+
+### App Logo
+
+The logo is configured separately per platform since each platform handles images differently.
+
+**Android** — pass the name of a resource that exists in `res/drawable/` or `res/mipmap/` inside your Android project. Every Flutter app ships with `ic_launcher` in `res/mipmap/` by default:
+
+```dart
+androidAppLogo: 'ic_launcher'  // uses the app launcher icon
+androidAppLogo: 'my_logo'      // uses res/drawable/my_logo.png or res/mipmap/my_logo.png
+```
+
+**iOS** — pass a Flutter asset path. Add the image to your `pubspec.yaml` and pass the same path:
+
+```yaml
+# pubspec.yaml
+flutter:
+  assets:
+    - assets/logo.png
+```
+
+```dart
+iosAppLogo: 'assets/logo.png'
 ```
 
 ---
 
 ## 🔧 API Reference
 
-### `createPaymentIntention()`
-
-| Mode | Parameter | Type | Description |
-|------|-----------|------|-------------|
-| Both | `useSecureMode` | `bool` | `true` for secure mode, `false` for direct |
-| Secure | `publicKey` | `String` | Your Paymob public key |
-| Secure | `clientSecret` | `String` | Client secret from your backend |
-| Direct | `secretKey` | `String` | Your Paymob secret key |
-| Direct | `amount` | `int` | Amount in currency's main unit |
-| Direct | `currency` | `String` | Currency code (e.g. `'EGP'`) |
-| Direct | `integrationId` | `int` | Your Paymob integration ID |
-| Direct | `billingData` | `Map<String, dynamic>` | Customer billing info |
-| Direct | `items` | `List<Map<String, dynamic>>?` | Optional item list |
-
-**Returns:** `Future<Map<String, String>>` containing `publicKey` and `clientSecret`.
-
 ### `payWithPaymob()`
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `publicKey` | `String` | Your Paymob public key |
-| `clientSecret` | `String` | Client secret from payment intention |
+| `clientSecret` | `String` | Client secret from your backend |
 | `customization` | `PaymobCustomization?` | Optional UI customization |
 
 **Returns:** `Future<PaymobPaymentResult>`
+
+### `PaymobCustomization`
+
+| Parameter | Type | Platform | Description |
+|-----------|------|----------|-------------|
+| `appName` | `String?` | Both | Branding label shown inside the SDK UI |
+| `androidAppLogo` | `String?` | Android | Drawable/mipmap resource name e.g. `'ic_launcher'` |
+| `iosAppLogo` | `String?` | iOS | Flutter asset path e.g. `'assets/logo.png'` |
+| `buttonBackgroundColor` | `Color?` | Both | Payment button background color |
+| `buttonTextColor` | `Color?` | Both | Payment button text color |
+| `showSaveCard` | `bool?` | Both | Show/hide the save card checkbox |
+| `saveCardDefault` | `bool?` | Both | Pre-check the save card checkbox |
+| `showTransactionResult` | `bool?` | Both | Show/hide the built-in result screen after payment |
+| `isKeyboardHandlingEnabled` | `bool?` | iOS | SDK keyboard avoidance behavior |
+
+### `PaymobPaymentResult`
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `status` | `PaymentStatus` | `successful`, `failure`, `pending`, `unknown` |
+| `isSuccessful` | `bool` | `true` if payment succeeded |
+| `isFailure` | `bool` | `true` if payment failed |
+| `isPending` | `bool` | `true` if payment is pending |
+| `transactionDetails` | `Map<String, dynamic>?` | Transaction data (successful payments only) |
+| `errorMessage` | `String?` | Error description if status is `unknown` |
 
 ---
 

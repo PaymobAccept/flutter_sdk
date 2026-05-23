@@ -53,10 +53,12 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
         var buttonBackgroundColor: Int? = null
         var buttonTextColor: Int? = null
         val appName = call.argument<String>("appName")
+        val appLogoName = call.argument<String>("androidAppLogo")
         val buttonBackgroundColorData = call.argument<Number>("buttonBackgroundColor")?.toInt()
         val buttonTextColorData = call.argument<Number>("buttonTextColor")?.toInt()
         val saveCardDefault = call.argument<Boolean>("saveCardDefault") ?: false
         val showSaveCard = call.argument<Boolean>("showSaveCard") ?: true
+        val showTransactionResult = call.argument<Boolean>("showTransactionResult") ?: true
 
         if (buttonTextColorData != null) {
             buttonTextColor = Color.argb(
@@ -86,8 +88,17 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
                 .setButtonBackgroundColor(buttonBackgroundColor ?: Color.BLACK)
                 .setButtonTextColor(buttonTextColor ?: Color.WHITE)
                 .setAppName(appName)
+                .apply {
+                    if (appLogoName != null) {
+                        val resId = currentActivity.resources.getIdentifier(appLogoName, "mipmap", currentActivity.packageName)
+                            .takeIf { it != 0 }
+                            ?: currentActivity.resources.getIdentifier(appLogoName, "drawable", currentActivity.packageName)
+                        if (resId != 0) setAppLogo(resId)
+                    }
+                }
                 .showSaveCard(showSaveCard)
                 .saveCardByDefault(saveCardDefault)
+                .showTransactionResult(showTransactionResult)
                 .build()
 
             paymobSdk.start()
@@ -110,8 +121,8 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
     }
 
     override fun onFailure(msg: String?) {
-        Log.e("PaymobFlutterSDK", "Payment rejected: $msg")
-        val resultMap = mapOf("status" to "Rejected")
+        Log.e("PaymobFlutterSDK", "Payment failure: $msg")
+        val resultMap = mapOf("status" to "Failure")
         pendingResult?.success(resultMap)
         pendingResult = null
     }

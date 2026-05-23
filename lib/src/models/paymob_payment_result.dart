@@ -13,8 +13,8 @@ class PaymobPaymentResult {
   /// Returns true if the payment was successful
   bool get isSuccessful => status == PaymentStatus.successful;
 
-  /// Returns true if the payment was rejected
-  bool get isRejected => status == PaymentStatus.rejected;
+  /// Returns true if the payment failed
+  bool get isFailure => status == PaymentStatus.failure;
 
   /// Returns true if the payment is pending
   bool get isPending => status == PaymentStatus.pending;
@@ -28,7 +28,7 @@ class PaymobPaymentResult {
 /// Enum representing possible payment statuses
 enum PaymentStatus {
   successful,
-  rejected,
+  failure,
   pending,
   unknown,
 }

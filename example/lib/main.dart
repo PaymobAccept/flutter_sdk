@@ -20,34 +20,17 @@ class MyApp extends StatelessWidget {
             onPressed: () async {
               final service = PaymobService();
 
-              final creds = await service.createPaymentIntention(
-                useSecureMode: false,
-                secretKey: 'xxxxxxxxxxxxxxx',
-                publicKey: 'xxxxxxxxxxxxxxx',
-                amount: 100,
-                currency: 'EGP',
-                integrationId: 123456,
-                billingData: {
-                  'first_name': 'Test',
-                  'last_name': 'User',
-                  'email': 'test@test.com',
-                  'phone_number': '+201000000000',
-                  'apartment': 'NA',
-                  'floor': 'NA',
-                  'street': 'NA',
-                  'building': 'NA',
-                  'shipping_method': 'NA',
-                  'postal_code': 'NA',
-                  'city': 'Cairo',
-                  'country': 'EG',
-                  'state': 'NA',
-                },
-              );
+              // publicKey and clientSecret must come from your backend
+              const publicKey = 'egy_pk_test_ac9x2h52HlCpvqijALVSkCzLSPRueeEg';
+              const clientSecret = '<client_secret_from_your_backend>';
+
               final result = await service.payWithPaymob(
-                publicKey: creds['publicKey']!,
-                clientSecret: creds['clientSecret']!,
+                publicKey: publicKey,
+                clientSecret: clientSecret,
                 customization: PaymobCustomization(
                   appName: 'My Flutter App',
+                  androidAppLogo: 'ic_launcher',
+                  iosAppLogo: 'assets/logo.png',
                   buttonBackgroundColor: Colors.blue,
                   buttonTextColor: Colors.white,
                   saveCardDefault: true,
