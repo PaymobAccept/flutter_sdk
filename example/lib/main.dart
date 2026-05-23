@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               final service = PaymobService();
 
               // publicKey and clientSecret must come from your backend
-              const publicKey = 'egy_pk_test_ac9x2h52HlCpvqijALVSkCzLSPRueeEg';
+              const publicKey = 'egy_pk_xxxxxxxxxxxxxxxxxxxxxx';
               const clientSecret = '<client_secret_from_your_backend>';
 
               final result = await service.payWithPaymob(
