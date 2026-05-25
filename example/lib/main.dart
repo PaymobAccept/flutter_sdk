@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text('Paymob Test')),
+        resizeToAvoidBottomInset: false,
         body: Center(
           child: ElevatedButton(
             child: Text('Test Payment'),
