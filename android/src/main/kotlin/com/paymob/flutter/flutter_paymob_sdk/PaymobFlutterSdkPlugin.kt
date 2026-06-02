@@ -1,7 +1,6 @@
 package com.paymob.flutter.flutter_paymob_sdk
 
 import android.graphics.Color
-import android.util.Log
 import androidx.annotation.NonNull
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
@@ -103,7 +102,6 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
 
             paymobSdk.start()
         } catch (e: Exception) {
-            Log.e("PaymobFlutterSDK", "Error starting SDK", e)
             pendingResult?.error("SDK_ERROR", e.message, null)
             pendingResult = null
         }
@@ -111,7 +109,6 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
 
     // PaymobSDK Listener Methods
     override fun onSuccess(payResponse: HashMap<String, String?>) {
-        Log.d("PaymobFlutterSDK", "Payment Success: $payResponse")
         val resultMap = mapOf(
             "status" to "Successful",
             "details" to payResponse
@@ -121,7 +118,6 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
     }
 
     override fun onFailure(msg: String?) {
-        Log.e("PaymobFlutterSDK", "Payment failure: $msg")
         val resultMap = mapOf(
             "status" to "Failure",
             "errorMessage" to msg
@@ -131,7 +127,6 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
     }
 
     override fun onPending() {
-        Log.d("PaymobFlutterSDK", "Payment pending")
         val resultMap = mapOf("status" to "Pending")
         pendingResult?.success(resultMap)
         pendingResult = null
