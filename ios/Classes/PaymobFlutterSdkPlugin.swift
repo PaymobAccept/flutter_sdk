@@ -81,7 +81,6 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
            let clientSecret = arguments["clientSecret"] as? String {
             
             guard let topVC = UIApplication.shared.topMostViewController() else {
-                print("❌ Could not find a top view controller to present from.")
                 self.pendingResult?(FlutterError(
                     code: "VIEW_ERROR",
                     message: "Could not find a top view controller to present from.",
@@ -97,9 +96,7 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
                     PublicKey: publicKey,
                     ClientSecret: clientSecret
                 )
-                print("✅ Paymob SDK presented successfully")
             } catch {
-                print("❌ PaymobSDK failed to start: \(error)")
                 self.pendingResult?(FlutterError(
                     code: "PAYMOB_ERROR",
                     message: error.localizedDescription,
@@ -108,7 +105,6 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
                 self.pendingResult = nil
             }
         } else {
-            print("⚠️ Missing publicKey or clientSecret in arguments")
             self.pendingResult?(FlutterError(
                 code: "INVALID_ARGS",
                 message: "publicKey and clientSecret are required",
@@ -122,14 +118,11 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
 // MARK: - PaymobSDKDelegate
 extension PaymobFlutterSdkPlugin: PaymobSDKDelegate {
     public func transactionRejected(message: String) {
-        print("❌ [PaymobSDK] Transaction Failed: \(message)")
         self.pendingResult?(["status": "Failure", "errorMessage": message ])
         self.pendingResult = nil
     }
     
     public func transactionAccepted(transactionDetails: [String: Any]) {
-        print("✅ [PaymobSDK] Transaction Accepted")
-        print("📦 Details: \(transactionDetails)")
         self.pendingResult?(["status": "Successful", "details": transactionDetails])
         self.pendingResult = nil
     }
