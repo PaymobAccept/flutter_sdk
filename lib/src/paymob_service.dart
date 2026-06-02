@@ -62,6 +62,7 @@ class PaymobService {
         case 'failure':
           return PaymobPaymentResult(
             status: PaymentStatus.failure,
+            errorMessage: result['errorMessage']?.toString(),
           );
         case 'pending':
           return PaymobPaymentResult(

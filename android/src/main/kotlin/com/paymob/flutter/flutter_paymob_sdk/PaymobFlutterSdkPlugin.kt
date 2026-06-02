@@ -122,7 +122,10 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
 
     override fun onFailure(msg: String?) {
         Log.e("PaymobFlutterSDK", "Payment failure: $msg")
-        val resultMap = mapOf("status" to "Failure")
+        val resultMap = mapOf(
+            "status" to "Failure",
+            "errorMessage" to msg
+        )
         pendingResult?.success(resultMap)
         pendingResult = null
     }

@@ -38,7 +38,11 @@ class MyApp extends StatelessWidget {
                   showSaveCard: true,
                 ),
               );
-              _talker.info('Payment result: ${result.status}');
+              _talker.info(
+                    'Payment Status: ${result.status}, '
+                    'Error: ${result.errorMessage}, '
+                    'Details: ${result.transactionDetails}',
+              );
 
 
             },

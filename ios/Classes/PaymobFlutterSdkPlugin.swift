@@ -123,7 +123,7 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
 extension PaymobFlutterSdkPlugin: PaymobSDKDelegate {
     public func transactionRejected(message: String) {
         print("❌ [PaymobSDK] Transaction Failed: \(message)")
-        self.pendingResult?(["status": "Failure"])
+        self.pendingResult?(["status": "Failure", "errorMessage": message ])
         self.pendingResult = nil
     }
     
