@@ -30,5 +30,4 @@ enum PaymentStatus {
   successful,
   failure,
   pending,
-  unknown,
 }

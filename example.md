@@ -160,12 +160,12 @@ iosAppLogo: 'assets/logo.png'
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `status` | `PaymentStatus` | `successful`, `failure`, `pending`, `unknown` |
+| `status` | `PaymentStatus` | `successful`, `failure`, `pending` |
 | `isSuccessful` | `bool` | `true` if payment succeeded |
 | `isFailure` | `bool` | `true` if payment failed |
 | `isPending` | `bool` | `true` if payment is pending |
 | `transactionDetails` | `Map<String, dynamic>?` | Transaction data (successful payments only) |
-| `errorMessage` | `String?` | Error description if status is `unknown` |
+| `errorMessage` | `String?` | Error description if status is `failure` |
 
 ---
 

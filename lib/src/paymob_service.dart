@@ -1,11 +1,9 @@
 import 'package:flutter/services.dart';
-import 'package:talker/talker.dart';
 import 'models/paymob_payment_result.dart';
 import 'models/paymob_customization.dart';
 
 /// Main service class for integrating Paymob payment SDK
 class PaymobService {
-  final Talker _talker = Talker();
   static const MethodChannel _methodChannel =
   MethodChannel('paymob_sdk_flutter');
 
@@ -34,15 +32,13 @@ class PaymobService {
 
       return _parsePaymentResult(result);
     } on PlatformException catch (e) {
-      _talker.error("Failed to call native SDK: '${e.message}'");
       return PaymobPaymentResult(
-        status: PaymentStatus.unknown,
-        errorMessage: e.message ?? 'Unknown platform error',
+        status: PaymentStatus.failure,
+        errorMessage: e.message ?? 'platform error',
       );
     } catch (e) {
-      _talker.error("Unexpected error: $e");
       return PaymobPaymentResult(
-        status: PaymentStatus.unknown,
+        status: PaymentStatus.failure,
         errorMessage: e.toString(),
       );
     }
@@ -70,8 +66,7 @@ class PaymobService {
           );
         default:
           return PaymobPaymentResult(
-            status: PaymentStatus.unknown,
-            errorMessage: 'Unknown status: $status',
+            status: PaymentStatus.failure,
           );
       }
     }
@@ -89,7 +84,7 @@ class PaymobService {
     }
 
     return PaymobPaymentResult(
-      status: PaymentStatus.unknown,
+      status: PaymentStatus.failure,
       errorMessage: 'Unexpected result format: $result',
     );
   }
