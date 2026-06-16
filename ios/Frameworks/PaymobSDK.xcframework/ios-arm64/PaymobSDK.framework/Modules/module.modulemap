@@ -7,5 +7,4 @@ framework module PaymobSDK {
 
 module PaymobSDK.Swift {
   header "PaymobSDK-Swift.h"
-  requires objc
 }

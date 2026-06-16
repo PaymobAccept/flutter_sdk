@@ -51,5 +51,5 @@ repositories {
 }
 
 dependencies {
-    api("com.paymob.sdk:Paymob-SDK:1.8.1")
+    api("com.paymob.sdk:Paymob-SDK:1.9.2")
 }
