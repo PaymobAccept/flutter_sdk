@@ -3,7 +3,6 @@ import 'package:flutter_paymob_sdk/flutter_paymob_sdk.dart';
 
 import '../../model/product.dart';
 import '../../widgets/payment_result_sheet.dart';
-import '../../widgets/summary_row.dart';
 
 class PaymentScreen extends StatefulWidget {
   final Product product;
@@ -25,11 +24,6 @@ class _PaymentScreenState extends State<PaymentScreen> {
   late final PaymobEmbeddedCheckoutController _controller;
   PaymobPaymentResult? _lastResult;
 
-  double get _itemPrice => widget.product.priceCents / 100;
-
-  double get _vat => _itemPrice * 0.14;
-
-  double get _total => _itemPrice + _vat;
 
   PaymobEmbeddedUiCustomization get _uiCustomization =>
       PaymobEmbeddedUiCustomization(

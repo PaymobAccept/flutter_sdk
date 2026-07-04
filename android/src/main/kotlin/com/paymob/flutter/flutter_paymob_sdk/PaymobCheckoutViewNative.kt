@@ -139,25 +139,46 @@ internal class PaymobCheckoutViewNative(
         })
     }
 
+    private var layoutPassCount = 0
+
     private fun observeHeight() {
         checkoutView.viewTreeObserver.addOnGlobalLayoutListener {
+            layoutPassCount++
+            Log.d(TAG, "[$baseName] onGlobalLayout pass #$layoutPassCount — rootView.width=${rootView.width} childCount=${checkoutView.childCount} treeObserver.isAlive=${checkoutView.viewTreeObserver.isAlive}")
+            logViewTree(checkoutView, 0)
             measureAndEmitHeight()
+        }
+    }
+
+    private fun logViewTree(view: View, depth: Int) {
+        val indent = "  ".repeat(depth)
+        val extra = if (view is android.view.ViewGroup) "childCount=${view.childCount}" else ""
+        Log.d(TAG, "[$baseName] $indent${view.javaClass.simpleName} w=${view.width} h=${view.height} visibility=${view.visibility} $extra")
+        if (view is android.view.ViewGroup && depth < 6) {
+            for (i in 0 until view.childCount) {
+                logViewTree(view.getChildAt(i), depth + 1)
+            }
         }
     }
 
     private fun measureAndEmitHeight() {
         val width = rootView.width
-        if (width <= 0) return
+        if (width <= 0) {
+            Log.d(TAG, "[$baseName] measureAndEmitHeight: skipped — rootView.width<=0")
+            return
+        }
         checkoutView.measure(
             View.MeasureSpec.makeMeasureSpec(width, View.MeasureSpec.EXACTLY),
             View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
         )
         val heightPx = checkoutView.measuredHeight
+        Log.d(TAG, "[$baseName] measureAndEmitHeight: measuredHeightPx=$heightPx lastEmittedHeightDp=$lastEmittedHeightDp")
         if (heightPx <= 0) return
         val density = context.resources.displayMetrics.density
         val heightDp = (heightPx / density).toDouble()
         if (Math.abs(heightDp - lastEmittedHeightDp) > 0.5) {
             lastEmittedHeightDp = heightDp
+            Log.d(TAG, "[$baseName] emitting heightChanged heightDp=$heightDp")
             emit(mapOf("type" to "heightChanged", "height" to heightDp))
         }
     }

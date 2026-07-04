@@ -6,3 +6,5 @@ QUICK_REFERENCE.md
 pubspec.lock
 CLAUDE.md
 
+# FVM Version Cache
+.fvm/
