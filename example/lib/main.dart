@@ -10,8 +10,8 @@ void main() => runApp(const MyApp());
 final _talker = Talker();
 
 // publicKey and clientSecret must come from your backend
-const _publicKey = 'xxxxxxxxxxxxxxx';
-const _clientSecret = 'xxxxxxxxxxxxxxx';
+const _publicKey = 'egy_pk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+const _clientSecret = 'egy_csk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 final _demoProduct = Product(
   name: 'iPhone',
