@@ -13,6 +13,7 @@ import com.paymob.paymob_sdk.FailureCallBackVersion
 import com.paymob.paymob_sdk.PaymobSdk
 import com.paymob.paymob_sdk.ui.PaymobSdkListener
 import android.app.Activity
+import androidx.activity.ComponentActivity
 
 class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, PaymobSdkListener {
     private lateinit var channel: MethodChannel
@@ -22,6 +23,16 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         channel = MethodChannel(flutterPluginBinding.binaryMessenger, "paymob_sdk_flutter")
         channel.setMethodCallHandler(this)
+
+        // Register the embedded card-checkout PlatformView factory.
+        // This allows `AndroidView(viewType: 'paymob_checkout_view')` on the
+        // Dart side to create a native view instance.
+        flutterPluginBinding.platformViewRegistry.registerViewFactory(
+            "paymob_checkout_view",
+            PaymobCheckoutViewFactory(flutterPluginBinding.binaryMessenger) {
+                activity as? ComponentActivity
+            }
+        )
     }
 
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {

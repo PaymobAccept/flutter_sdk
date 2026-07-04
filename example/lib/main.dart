@@ -1,3 +1,5 @@
+import 'package:example/widgets/payment_result_sheet.dart';
+import 'package:example/widgets/payment_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_paymob_sdk/flutter_paymob_sdk.dart';
 import 'package:talker/talker.dart';
@@ -6,47 +8,89 @@ void main() => runApp(const MyApp());
 
 final _talker = Talker();
 
+// publicKey and clientSecret must come from your backend
+const _publicKey = 'egy_pk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+const _clientSecret = 'egy_csk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text('Paymob Test')),
-        resizeToAvoidBottomInset: false,
-        body: Center(
-          child: ElevatedButton(
-            child: Text('Test Payment'),
-            onPressed: () async {
-              final service = PaymobService();
+    return const MaterialApp(home: HomeScreen());
+  }
+}
 
-              // publicKey and clientSecret must come from your backend
-              const publicKey = 'egy_pk_xxxxxxxxxxxxxxxxxxxxxx';
-              const clientSecret = '<client_secret_from_your_backend>';
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
-              final result = await service.payWithPaymob(
-                publicKey: publicKey,
-                clientSecret: clientSecret,
-                customization: PaymobCustomization(
-                  appName: 'My Flutter App',
-                  androidAppLogo: 'ic_launcher',
-                  iosAppLogo: 'assets/logo.png',
-                  buttonBackgroundColor: Colors.blue,
-                  buttonTextColor: Colors.white,
-                  saveCardDefault: true,
-                  showSaveCard: true,
-                  failureCallBackVersion: FailureCallBackVersion.V2,
-                ),
-              );
-              _talker.info(
-                    'Payment Status: ${result.status}, '
-                    'Error: ${result.errorMessage}, '
-                    'Details: ${result.transactionDetails}',
-              );
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
 
+class _HomeScreenState extends State<HomeScreen> {
+  bool _loading = false;
 
-            },
+  Future<void> _startNativePayment() async {
+    setState(() => _loading = true);
+
+    final service = PaymobService();
+    final result = await service.payWithPaymob(
+      publicKey: _publicKey,
+      clientSecret: _clientSecret,
+      customization: PaymobCustomization(
+        appName: 'My Flutter App',
+        androidAppLogo: 'ic_launcher',
+        iosAppLogo: 'assets/logo.png',
+        buttonBackgroundColor: Colors.blue,
+        buttonTextColor: Colors.white,
+        saveCardDefault: true,
+        showSaveCard: true,
+      failureCallBackVersion: FailureCallBackVersion.V2,),
+    );
+    _talker.info(
+      'Payment Status: ${result.status}, '
+      'Error: ${result.errorMessage}, '
+      'Details: ${result.transactionDetails}',
+    );
+
+    if (!mounted) return;
+    setState(() => _loading = false);
+    PaymentResultSheet.show(context, result);
+  }
+
+  void _startEmbeddedPayment() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => PaymentScreen(
+          publicKey: _publicKey,
+          clientSecret: _clientSecret,
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Paymob Test')),
+      resizeToAvoidBottomInset: false,
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 32),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              FilledButton(
+                onPressed: _loading ? null : _startNativePayment,
+                child: const Text('Native Sheet'),
+              ),
+              const SizedBox(height: 16),
+              FilledButton(
+                onPressed: _loading ? null : _startEmbeddedPayment,
+                child: const Text('Embedded View'),
+              ),
+            ],
           ),
         ),
       ),
