@@ -9,6 +9,12 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
         let channel = FlutterMethodChannel(name: "paymob_sdk_flutter", binaryMessenger: registrar.messenger())
         let instance = PaymobFlutterSdkPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
+
+        // Register the embedded card-checkout PlatformView factory.
+        // This allows `UiKitView(viewType: 'paymob_checkout_view')` on the
+        // Dart side to create a live PaymobCheckoutView instance.
+        let factory = PaymobCheckoutViewFactory(messenger: registrar.messenger())
+        registrar.register(factory, withId: "paymob_checkout_view")
     }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
