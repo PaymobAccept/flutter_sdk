@@ -49,23 +49,23 @@ final class PaymobCheckoutViewNative: NSObject, FlutterPlatformView {
         cv.delegate = self
 
         cv.onHeightChanged = { [weak self] newHeight in
+        
             self?.emitHeight(newHeight)
-            self?.scheduleForceLayout()
         }
+        var publicKey: String?
+        var clientSecret: String?
 
         if let params = args as? [String: Any] {
             cv.configure(
                 uiCustomization: params["uiCustomization"] as? String,
-                showAddNewCard:  params["showAddNewCard"]  as? Bool ?? true,
-                payFromOutside:  params["payFromOutside"]  as? Bool ?? false,
-                showSaveCard:    params["showSaveCard"]    as? Bool ?? true,
+                showAddNewCard: params["showAddNewCard"] as? Bool ?? true,
+                payFromOutside: params["payFromOutside"] as? Bool ?? false,
+                showSaveCard: params["showSaveCard"] as? Bool ?? true,
                 saveCardDefault: params["saveCardDefault"] as? Bool ?? false
             )
 
-            if let pub = params["publicKey"] as? String,
-               let cs  = params["clientSecret"] as? String {
-                cv.setPaymentKeys(publicKey: pub, clientSecret: cs)
-            }
+            publicKey = params["publicKey"] as? String
+            clientSecret = params["clientSecret"] as? String
         }
 
         containerView.addSubview(cv)
@@ -90,11 +90,23 @@ final class PaymobCheckoutViewNative: NSObject, FlutterPlatformView {
         containerView.addGestureRecognizer(touchGR)
 
         scheduleWindowCover(params: args as? [String: Any])
+
+       DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            guard let publicKey,
+                  let clientSecret else { return }
+
+            print("window =", cv.window as Any)
+            print("isAttached =", cv.window != nil)
+
+            cv.setPaymentKeys(
+                publicKey: publicKey,
+                clientSecret: clientSecret
+            )
+        }
     }
 
     @objc private func handleTouch(_ gr: UILongPressGestureRecognizer) {
         guard gr.state == .began else { return }
-        scheduleForceLayout()
     }
 
     private func scheduleWindowCover(params: [String: Any]?) {
@@ -154,19 +166,6 @@ final class PaymobCheckoutViewNative: NSObject, FlutterPlatformView {
         }
     }
 
-    private func forceLayout() {
-        checkoutView?.setNeedsLayout()
-        checkoutView?.layoutIfNeeded()
-    }
-
-    private func scheduleForceLayout() {
-        for delay in [0.05, 0.2, 0.5, 1.0] {
-            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-                self?.forceLayout()
-            }
-        }
-    }
-
     private func bindChannels() {
         methodChannel.setMethodCallHandler { [weak self] call, result in
             guard let self else { return }
@@ -188,7 +187,6 @@ final class PaymobCheckoutViewNative: NSObject, FlutterPlatformView {
 
             case "payFromOutside":
                 self.checkoutView?.payFromOutside()
-                self.scheduleForceLayout()
                 result(nil)
 
             default:
@@ -217,12 +215,10 @@ final class PaymobCheckoutViewNative: NSObject, FlutterPlatformView {
     @objc private func keyboardWillShow(_ notification: Notification) {
         guard let frame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
         emit(["type": "keyboardWillShow", "keyboardHeight": frame.height])
-        scheduleForceLayout()
     }
 
     @objc private func keyboardWillHide() {
         emit(["type": "keyboardWillHide"])
-        scheduleForceLayout()
     }
 
     private func emitHeight(_ height: CGFloat) {
@@ -235,7 +231,6 @@ final class PaymobCheckoutViewNative: NSObject, FlutterPlatformView {
             removeWindowCover(animated: true)
         }
         emit(["type": "heightChanged", "height": height])
-        scheduleForceLayout()
     }
 
     private func emit(_ event: [String: Any]) {
@@ -252,7 +247,6 @@ extension PaymobCheckoutViewNative: FlutterStreamHandler {
             removeWindowCover(animated: false)
             emit(["type": "heightChanged", "height": lastEmittedHeight])
         }
-        scheduleForceLayout()
         return nil
     }
 
