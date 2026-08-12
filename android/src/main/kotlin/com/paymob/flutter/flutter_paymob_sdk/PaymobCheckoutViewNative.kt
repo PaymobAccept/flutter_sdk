@@ -157,8 +157,9 @@ internal class PaymobCheckoutViewNative(
         val density = context.resources.displayMetrics.density
         val heightDp = (heightPx / density).toDouble()
         if (Math.abs(heightDp - lastEmittedHeightDp) > 0.5) {
+            val sink = eventSink ?: return
             lastEmittedHeightDp = heightDp
-            emit(mapOf("type" to "heightChanged", "height" to heightDp))
+            rootView.post { sink.success(mapOf("type" to "heightChanged", "height" to heightDp)) }
         }
     }
 
