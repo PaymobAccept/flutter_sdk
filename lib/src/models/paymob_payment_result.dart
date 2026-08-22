@@ -16,6 +16,9 @@ class PaymobPaymentResult {
   /// Returns true if the payment failed
   bool get isFailure => status == PaymentStatus.failure;
 
+  /// Returns true if the payment is cancelled
+  bool get isCancelled => status == PaymentStatus.cancelled;
+
   /// Returns true if the payment is pending
   bool get isPending => status == PaymentStatus.pending;
 
@@ -29,5 +32,6 @@ class PaymobPaymentResult {
 enum PaymentStatus {
   successful,
   failure,
+  cancelled,
   pending,
 }
