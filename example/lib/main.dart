@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
                   buttonTextColor: Colors.white,
                   saveCardDefault: true,
                   showSaveCard: true,
+                  failureCallBackVersion: FailureCallBackVersion.V2,
                 ),
               );
               _talker.info(

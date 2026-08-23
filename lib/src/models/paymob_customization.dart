@@ -26,6 +26,9 @@ class PaymobCustomization {
   /// Whether to show the transaction result screen after payment
   final bool? showTransactionResult;
 
+  /// Sets the failure callback version used by the native SDK
+  final FailureCallBackVersion? failureCallBackVersion;
+
   /// Whether the SDK handles keyboard avoidance behavior
   final bool? isKeyboardHandlingEnabled;
 
@@ -38,6 +41,7 @@ class PaymobCustomization {
     this.saveCardDefault,
     this.showSaveCard,
     this.showTransactionResult,
+    this.failureCallBackVersion,
     this.isKeyboardHandlingEnabled,
   });
 
@@ -53,7 +57,14 @@ class PaymobCustomization {
       if (saveCardDefault != null) 'saveCardDefault': saveCardDefault,
       if (showSaveCard != null) 'showSaveCard': showSaveCard,
       if (showTransactionResult != null) 'showTransactionResult': showTransactionResult,
+      if (failureCallBackVersion != null) 'failureCallBackVersion': failureCallBackVersion?.name,
       if (isKeyboardHandlingEnabled != null) 'isKeyboardHandlingEnabled': isKeyboardHandlingEnabled,
     };
   }
+}
+
+/// Enum representing possible FailureCallBackVersion values
+enum FailureCallBackVersion {
+  V1,
+  V2,
 }

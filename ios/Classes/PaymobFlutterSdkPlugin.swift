@@ -72,6 +72,12 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
             paymob.paymobSDKCustomization.showTransactionResult = showTransactionResult
         }
 
+        if let failureCallBackVersion = arguments["failureCallBackVersion"] as? String {
+            paymob.paymobSDKCustomization.setFailureCallBackVersion =
+            (failureCallBackVersion.lowercased() == "v2" ? .V2 : .V1)
+
+        }
+
         if let isKeyboardHandlingEnabled = arguments["isKeyboardHandlingEnabled"] as? Bool {
             paymob.paymobSDKCustomization.isKeyboardHandlingEnabled = isKeyboardHandlingEnabled
         }
@@ -119,6 +125,12 @@ public class PaymobFlutterSdkPlugin: NSObject, FlutterPlugin {
 extension PaymobFlutterSdkPlugin: PaymobSDKDelegate {
     public func transactionRejected(message: String) {
         self.pendingResult?(["status": "Failure", "errorMessage": message ])
+        self.pendingResult = nil
+    }
+
+    public func transactionCancelled() {
+        print("⏳ [PaymobSDK] Transaction Cancelled")
+        self.pendingResult?(["status": "Cancelled"])
         self.pendingResult = nil
     }
     

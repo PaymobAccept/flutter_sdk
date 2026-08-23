@@ -379,6 +379,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) NSBundle * _Nonnull Fl
 @end
 
 @class NSCoder;
+SWIFT_CLASS("_TtC9PaymobSDK24CardInstallmentPlansView")
+@interface CardInstallmentPlansView : UIView
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+@interface CardInstallmentPlansView (SWIFT_EXTENSION(PaymobSDK)) <UITableViewDataSource, UITableViewDelegate>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
 IB_DESIGNABLE
 SWIFT_CLASS("_TtC9PaymobSDK23RadioCheckboxBaseButton")
 @interface RadioCheckboxBaseButton : UIButton
@@ -494,13 +512,10 @@ SWIFT_CLASS("_TtC9PaymobSDK8DropDown")
 - (void)touchAction;
 @end
 
-@class UITableView;
-@class NSIndexPath;
 @interface DropDown (SWIFT_EXTENSION(PaymobSDK)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
-@class UITableViewCell;
 @interface DropDown (SWIFT_EXTENSION(PaymobSDK)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -835,6 +850,31 @@ SWIFT_CLASS("_TtC9PaymobSDK24KeyboardLayoutConstraint") SWIFT_AVAILABILITY(tvos,
 @interface KeyboardLayoutConstraint : NSLayoutConstraint
 - (void)awakeFromNib SWIFT_AVAILABILITY(tvos,unavailable);
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC9PaymobSDK8MenuView")
+@interface MenuView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC9PaymobSDK15NibLoadableView")
+@interface NibLoadableView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC9PaymobSDK18OneClickButtonView")
+@interface OneClickButtonView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+@end
+
+SWIFT_CLASS("_TtC9PaymobSDK18OneClickHeaderView")
+@interface OneClickHeaderView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
 SWIFT_CLASS("_TtC9PaymobSDK18PaymobCheckoutView")
@@ -1250,6 +1290,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) NSBundle * _Nonnull Fl
 @end
 
 @class NSCoder;
+SWIFT_CLASS("_TtC9PaymobSDK24CardInstallmentPlansView")
+@interface CardInstallmentPlansView : UIView
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+@interface CardInstallmentPlansView (SWIFT_EXTENSION(PaymobSDK)) <UITableViewDataSource, UITableViewDelegate>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
 IB_DESIGNABLE
 SWIFT_CLASS("_TtC9PaymobSDK23RadioCheckboxBaseButton")
 @interface RadioCheckboxBaseButton : UIButton
@@ -1365,13 +1423,10 @@ SWIFT_CLASS("_TtC9PaymobSDK8DropDown")
 - (void)touchAction;
 @end
 
-@class UITableView;
-@class NSIndexPath;
 @interface DropDown (SWIFT_EXTENSION(PaymobSDK)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
-@class UITableViewCell;
 @interface DropDown (SWIFT_EXTENSION(PaymobSDK)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -1706,6 +1761,31 @@ SWIFT_CLASS("_TtC9PaymobSDK24KeyboardLayoutConstraint") SWIFT_AVAILABILITY(tvos,
 @interface KeyboardLayoutConstraint : NSLayoutConstraint
 - (void)awakeFromNib SWIFT_AVAILABILITY(tvos,unavailable);
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC9PaymobSDK8MenuView")
+@interface MenuView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC9PaymobSDK15NibLoadableView")
+@interface NibLoadableView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC9PaymobSDK18OneClickButtonView")
+@interface OneClickButtonView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+@end
+
+SWIFT_CLASS("_TtC9PaymobSDK18OneClickHeaderView")
+@interface OneClickHeaderView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
 SWIFT_CLASS("_TtC9PaymobSDK18PaymobCheckoutView")

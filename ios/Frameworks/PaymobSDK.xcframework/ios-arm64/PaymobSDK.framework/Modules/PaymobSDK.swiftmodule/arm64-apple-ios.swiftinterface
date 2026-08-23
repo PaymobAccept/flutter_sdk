@@ -39,6 +39,9 @@ public struct CheckBoxColor {
   override public init(_ buttons: [CheckboxButton] = super)
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class NibLoadableView : UIKit.UIView {
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @available(tvOS, unavailable)
 @_Concurrency.MainActor @preconcurrency public class KeyboardLayoutConstraint : UIKit.NSLayoutConstraint {
   @available(tvOS, unavailable)
@@ -58,6 +61,9 @@ open class FPNCountryRepository {
   @objc func fpnDidSelectCountry(name: Swift.String, dialCode: Swift.String, code: Swift.String)
   @objc func fpnDidValidatePhoneNumber(textField: FPNTextField, isValid: Swift.Bool)
   @objc func fpnDisplayCountryList()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class MenuView : UIKit.UIView {
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers open class FPNUtils {
   open class func getCurrentCountry() -> FPNCountry?
@@ -240,6 +246,7 @@ extension PaymobCheckoutView {
   public var showConfirmationPage: Swift.Bool?
   public var showTransactionResult: Swift.Bool?
   public var isKeyboardHandlingEnabled: Swift.Bool?
+  public var setFailureCallBackVersion: FailureCallBackVersion?
   @objc deinit
 }
 public struct FPNCountry : Swift.Equatable {
@@ -265,6 +272,20 @@ public protocol CheckboxButtonDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class CardInstallmentPlansView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency final public func resetSelection()
+  @objc deinit
+}
+extension CardInstallmentPlansView : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency open class FPNTextField : UIKit.UITextField {
   @objc @_Concurrency.MainActor @preconcurrency open var flagButtonSize: CoreFoundation.CGSize {
@@ -750,6 +771,7 @@ public protocol PaymobSDKDelegate : AnyObject {
   func transactionRejected(message: Swift.String)
   func transactionAccepted(transactionDetails: [Swift.String : Any])
   func transactionPending()
+  func transactionCancelled()
 }
 public enum FPNCountryCode : Swift.String {
   case AF
@@ -996,6 +1018,13 @@ public enum FPNCountryCode : Swift.String {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class OneClickButtonView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class OneClickHeaderView : UIKit.UIView {
+  @objc deinit
+}
 public enum CardType : Swift.String, Swift.Codable, Swift.CaseIterable {
   case Unknown, OmanNet, JCB, Meeza, Maestro, Amex, Visa, MasterCard
   public init?(rawValue: Swift.String)
@@ -1012,6 +1041,15 @@ public enum InstaPayPaymentType {
   case Intent
   case QrCode
   public static func == (a: InstaPayPaymentType, b: InstaPayPaymentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum FailureCallBackVersion {
+  case V1
+  case V2
+  public static func == (a: FailureCallBackVersion, b: FailureCallBackVersion) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -1072,3 +1110,5 @@ extension CardType : Swift.Hashable {}
 extension CardType : Swift.RawRepresentable {}
 extension InstaPayPaymentType : Swift.Equatable {}
 extension InstaPayPaymentType : Swift.Hashable {}
+extension FailureCallBackVersion : Swift.Equatable {}
+extension FailureCallBackVersion : Swift.Hashable {}

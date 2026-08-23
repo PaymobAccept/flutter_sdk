@@ -60,6 +60,10 @@ class PaymobService {
             status: PaymentStatus.failure,
             errorMessage: result['errorMessage']?.toString(),
           );
+        case 'cancelled':
+          return PaymobPaymentResult(
+            status: PaymentStatus.cancelled,
+          );
         case 'pending':
           return PaymobPaymentResult(
             status: PaymentStatus.pending,
@@ -78,6 +82,8 @@ class PaymobService {
         return PaymobPaymentResult(status: PaymentStatus.successful);
       } else if (resultLower.contains('failure')) {
         return PaymobPaymentResult(status: PaymentStatus.failure);
+      } else if (resultLower.contains('cancelled')) {
+        return PaymobPaymentResult(status: PaymentStatus.cancelled);
       } else if (resultLower.contains('pending')) {
         return PaymobPaymentResult(status: PaymentStatus.pending);
       }
