@@ -1,4 +1,3 @@
-import 'package:example/model/product.dart';
 import 'package:example/widgets/payment_result_sheet.dart';
 import 'package:example/widgets/payment_screen.dart';
 import 'package:flutter/material.dart';
@@ -10,19 +9,8 @@ void main() => runApp(const MyApp());
 final _talker = Talker();
 
 // publicKey and clientSecret must come from your backend
-const _publicKey = 'egy_pk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
-const _clientSecret = 'egy_csk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
-
-final _demoProduct = Product(
-  name: 'iPhone',
-  subtitle: '256 GB · Natural Titanium',
-  description:
-      'A17 Pro chip · 48 MP camera system · USB‑C with USB 3 · All-day battery',
-  price: 'EGP 29,999',
-  priceCents: 2999900,
-  icon: Icons.phone_iphone,
-  color: const Color(0xFF1A73E8),
-);
+const _publicKey = 'egy_pk_test_huLoawdiICfwok1UVzEvQ4R3OajoyI1b';
+const _clientSecret = 'egy_csk_test_5d864ce959f93419ae27b9d1be259896';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -75,7 +63,6 @@ class _HomeScreenState extends State<HomeScreen> {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => PaymentScreen(
-          product: _demoProduct,
           publicKey: _publicKey,
           clientSecret: _clientSecret,
         ),
