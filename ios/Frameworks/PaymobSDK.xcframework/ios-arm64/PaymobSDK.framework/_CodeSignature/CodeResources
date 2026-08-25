@@ -66,7 +66,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		RWpfxvDk5/nv2/cwOSwjzjuqt6g=
+		BxkleVGnCp0o1lDywWVHzs5pEOw=
+		</data>
+		<key>AuthCardView.nib</key>
+		<data>
+		Lsn5vJ6RQLJy0wkq2tKXBGliUhk=
 		</data>
 		<key>BKMoneyKit.bundle/CardLogo/amex@2x.png</key>
 		<data>
@@ -124,6 +128,10 @@
 		<data>
 		5HmViBqa6J1vaYIa0RKQyP0GjcM=
 		</data>
+		<key>BankCardVC.nib</key>
+		<data>
+		wJCeSA5yws2s84MiWd+vGZmWmdc=
+		</data>
 		<key>BankCardsView.nib</key>
 		<data>
 		dxw6w6IftVpdiJERoGNuqx4le1U=
@@ -138,11 +146,27 @@
 		</data>
 		<key>BankInstallments.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		j00jNxG0/5ikPwAFBzXi3Iax98s=
+		vLGscD31tIHB1aDyn30ClNvc7XM=
 		</data>
 		<key>BankInstallmentsCell.nib</key>
 		<data>
 		UppLd37gYzBL1VuY2uFWo3Sv3Sk=
+		</data>
+		<key>CardInstallmentPlanCell.nib</key>
+		<data>
+		9s1Tvv0MQjHgea755BrGv42J9f8=
+		</data>
+		<key>CardInstallmentPlansView.nib</key>
+		<data>
+		9N71zjNeONTQiH4p0Rkbkrq9y30=
+		</data>
+		<key>ClickAccountSetupFailedView.nib</key>
+		<data>
+		em/a7t2XQ04YiQ9kz/8WKm9ZJbg=
+		</data>
+		<key>ClickAccountVerificationStepsView.nib</key>
+		<data>
+		pBDQwH/whZyANnLQKJvKCC8alOI=
 		</data>
 		<key>Confirmation.storyboardc/ConfirmationViewController.nib</key>
 		<data>
@@ -154,7 +178,7 @@
 		</data>
 		<key>Confirmation.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		zY/70vZWFsTcnk94snR6Zj+zUP0=
+		uaCr3vBEItl08qBUeGYb+fw2XWI=
 		</data>
 		<key>Contact.storyboardc/ContactVC.nib</key>
 		<data>
@@ -180,9 +204,21 @@
 		<data>
 		ZTEGPUEu0TtjECVcXtfOWdB1Gko=
 		</data>
+		<key>CreateOneClickAccountVC.nib</key>
+		<data>
+		oO63/h3ux1e7WoTBWL7UhMy/iJU=
+		</data>
 		<key>CustomErrorView.nib</key>
 		<data>
 		2HQj40KvhBk6UUBBA/UpDYb0k4g=
+		</data>
+		<key>DetetcionView.nib</key>
+		<data>
+		yYnqIzfFQM3CfQOsFRkXfFN2y7k=
+		</data>
+		<key>EmailRowView.nib</key>
+		<data>
+		4TGQh/OH605NRwbHfAUmbBEUJq0=
 		</data>
 		<key>FPNCountryView.nib</key>
 		<data>
@@ -306,7 +342,7 @@
 		</data>
 		<key>Headers/PaymobSDK-Swift.h</key>
 		<data>
-		2CcFkKuS7R1tfCkllZpmVJvfq6Y=
+		QYdHP8lUEk+jUaU5N+EvMMKvTvo=
 		</data>
 		<key>Headers/PaymobSDK.h</key>
 		<data>
@@ -334,31 +370,43 @@
 		</data>
 		<key>InstallmentsView.nib</key>
 		<data>
-		4lHcpimJtsDnUoO0xokao2FX6j8=
+		yQCPo2MmtJ4AHJ9yJie4PGnq/kE=
+		</data>
+		<key>InstantRefundView.nib</key>
+		<data>
+		JcS1B+8g7Y7ZNJ7nhHNyaDQd274=
 		</data>
 		<key>Inter-Medium.otf</key>
 		<data>
 		NI8vTfgweXhMBCoL3MSgaHMbNPM=
 		</data>
+		<key>LogOutPopupView.nib</key>
+		<data>
+		VcYN/1mLD1RhAx/Cl5wLpYvxUC8=
+		</data>
+		<key>MenuView.nib</key>
+		<data>
+		LAiN1JNnFu121Mhp2fVBdh6EP1A=
+		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		OQP7B7OM8EgIkxA1J6r9KeylgZk=
+		AP7cg9aYeBSmiBCbS85WJxCCo4o=
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		QaTdhAfQLibRP/DvIYodDetc7oM=
+		gi7UUfNSfzJaLqKztKUf2rhAbmI=
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		K6DpyMNxkeV9z5wAzaQ4MJOzDhs=
+		05K2sWyN68N3Wjt3fuwxWAsKsRE=
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		QaTdhAfQLibRP/DvIYodDetc7oM=
+		gi7UUfNSfzJaLqKztKUf2rhAbmI=
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ZN+h/oGg6PPssnm4P45Jivk3m40=
+		YPA4L0h1vbQGFt4tbdLYavxIdi8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -412,6 +460,46 @@
 		<data>
 		kYMqbnC/Cx3AeQwjwBesn+CVpyY=
 		</data>
+		<key>NewHeaderView.nib</key>
+		<data>
+		LgmeM9/wtLtmETbNv17lNGXUR30=
+		</data>
+		<key>OneClickActivationSuccessView.nib</key>
+		<data>
+		f9omTA3aGqA9PcqWfJ5r90P0j2o=
+		</data>
+		<key>OneClickAddCardCell.nib</key>
+		<data>
+		uHcX4WqXwZPPjUBY8OqtZG364JY=
+		</data>
+		<key>OneClickAddCardView.nib</key>
+		<data>
+		FnUF103Y5eszQzf9qbDNcPcvTLY=
+		</data>
+		<key>OneClickBankCardView.nib</key>
+		<data>
+		mE6k5QzhCEyL4gCCqSqSpIC9Umc=
+		</data>
+		<key>OneClickButtonView.nib</key>
+		<data>
+		gxdWx7Wj9RKK6KD22Z6OD3XcfOY=
+		</data>
+		<key>OneClickCardCell.nib</key>
+		<data>
+		pV1MFxeEVDTBYpqupUmK1TmZPGQ=
+		</data>
+		<key>OneClickCheckBox.nib</key>
+		<data>
+		+rCmwziRz/YTlg+M1h55qsYmgBw=
+		</data>
+		<key>OneClickHeaderView.nib</key>
+		<data>
+		k2u8gJRbdw/vR9m/hAla4yjONi0=
+		</data>
+		<key>OneClickSavedCard.nib</key>
+		<data>
+		tUfPG5UVLTBDYoz6UIQKaeL9T60=
+		</data>
 		<key>Otp.storyboardc/Info.plist</key>
 		<data>
 		0qcLahBP6/FJiJVxRnOp8WAip6E=
@@ -423,6 +511,10 @@
 		<key>Otp.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
 		Bg8VXQF7ZdgvIwr79otqLWUQdc4=
+		</data>
+		<key>OtpVerificationVC.nib</key>
+		<data>
+		5/4xBEF2VJasMKti8vZNH4h+v6U=
 		</data>
 		<key>OtpViewVC.nib</key>
 		<data>
@@ -446,11 +538,15 @@
 		</data>
 		<key>PaymentMethods.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		qYdwkq7cvLXaRxJZa01jM40I4q8=
+		O4H4ds/7j8vg1WLU3r/aLUJchAM=
 		</data>
 		<key>PaymobCheckoutView.nib</key>
 		<data>
 		6v3+Lq0e8nZXmepVHRh3GSfc+CM=
+		</data>
+		<key>PhoneRowView.nib</key>
+		<data>
+		brylnVhLtE+t3W1LnvEvN0GPabw=
 		</data>
 		<key>PostPay.storyboardc/Info.plist</key>
 		<data>
@@ -475,6 +571,10 @@
 		<key>Premium.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
 		K/Z7LmFP4Z6KgCxCANpal6dqrE4=
+		</data>
+		<key>RetryAccountCreationVC.nib</key>
+		<data>
+		WZaZu7cnjvbbXPw5s42bvZMHPpk=
 		</data>
 		<key>Souhoola.storyboardc/Info.plist</key>
 		<data>
@@ -550,7 +650,7 @@
 		</data>
 		<key>TopBarView.nib</key>
 		<data>
-		hSM5viv3GB1LXVZ7hZ7zutX1dlc=
+		FA+8qCCdPfGci6uXfA2TacqEng8=
 		</data>
 		<key>ValuEligibilityWebVC.nib</key>
 		<data>
@@ -712,7 +812,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wAQrMXkXDL/3IrqDh7Ryh4t//pncFWdBVRrw6sWZMEs=
+			FSfkCaAM9cs+p+PoF8d3lPV0MRNMsT3SPpx8DyeElBQ=
+			</data>
+		</dict>
+		<key>AuthCardView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n0SzHtCNQKSxOu+ZTTa/JrHNQnP4/qrQKTfPHdH/uNs=
 			</data>
 		</dict>
 		<key>BKMoneyKit.bundle/CardLogo/amex@2x.png</key>
@@ -813,6 +920,13 @@
 			f1I297YmORsbCC/VufdfKCQbkXsOnf8SGYH/V0yOW4s=
 			</data>
 		</dict>
+		<key>BankCardVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sIKwtWy2lVzihc/hiHMsEHb9fd/I6ItjbS867ozG0c0=
+			</data>
+		</dict>
 		<key>BankCardsView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -838,7 +952,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mEQyBJtXOOfeKC+H0+n7/od6WJRfABifktDbo26uaV0=
+			7KunacToiNVBE5YCwKQrcpRE6vYQsdBF+IESStJsayQ=
 			</data>
 		</dict>
 		<key>BankInstallmentsCell.nib</key>
@@ -846,6 +960,34 @@
 			<key>hash2</key>
 			<data>
 			GZ2nmHjFnsWx/Bga6/+l/OoT1PeEvEa8gSVLQgy9NIg=
+			</data>
+		</dict>
+		<key>CardInstallmentPlanCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eQCW/dH1MmiKMcW6vmfJv6lsnAt/N1hJ7vwDMtAR4fw=
+			</data>
+		</dict>
+		<key>CardInstallmentPlansView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8JZBd1DprI5OgCRUtO8IRSOjUo1UxO2dYOnwW6NNyHU=
+			</data>
+		</dict>
+		<key>ClickAccountSetupFailedView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			col7bsh4Is+8uTqej9RThXwAyBgWYtdVLnLua2giXIQ=
+			</data>
+		</dict>
+		<key>ClickAccountVerificationStepsView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UANknTA1HQQ/c9SFveCgySTOFG0zK7CgWU6Wyf0S+g0=
 			</data>
 		</dict>
 		<key>Confirmation.storyboardc/ConfirmationViewController.nib</key>
@@ -866,7 +1008,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uRv+FzTh1rY2UcITWxakO0wLVNEMufapFySCPQHKFY4=
+			IYHuPCYWkXQb/AlCFySZIHmibW3v1nJk3E6CLXaDNCc=
 			</data>
 		</dict>
 		<key>Contact.storyboardc/ContactVC.nib</key>
@@ -911,11 +1053,32 @@
 			NGYMRfnpjb7vJB+wxcVxw5HT7089sbWlRaRrenCyKII=
 			</data>
 		</dict>
+		<key>CreateOneClickAccountVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bLpRuGfCZUt/KAfs2WmjIIP8z1ZC4IwVa45/umVKxto=
+			</data>
+		</dict>
 		<key>CustomErrorView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			pB7bsz8S7SLrz7miOQ59doZQQG1qNEPSoVsMmmSXbbw=
+			</data>
+		</dict>
+		<key>DetetcionView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0HHAz2a0j7BRwyWRSDAhlu/3ab2p38GV/Lw68iHNhRU=
+			</data>
+		</dict>
+		<key>EmailRowView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0/x6aB0EGmCqXsLyWnJUn4ZygQ3cKRczX+A/DrL9juU=
 			</data>
 		</dict>
 		<key>FPNCountryView.nib</key>
@@ -1132,7 +1295,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYAcVaivSQw8IY8lqQEvl2iO/HjrKOwryCPPmTC1Zb4=
+			xN4cTpjrPVSpmGeI2SZoIJlTuD7z/HFmDOJbO4toVdE=
 			</data>
 		</dict>
 		<key>Headers/PaymobSDK.h</key>
@@ -1174,7 +1337,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HypmuVYx99dcuviaGSvvJQ7mIeL9zT30kNyTGmPiPpo=
+			YcpfzGHY3rdy2vdQ2ZXRFIdjtmt0VJ5GWhXdFHm5BeI=
+			</data>
+		</dict>
+		<key>InstantRefundView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tit4hYjXOGbejQ67ABSZ/VHC7oPWPe0R+zivJ3mkB38=
 			</data>
 		</dict>
 		<key>Inter-Medium.otf</key>
@@ -1184,39 +1354,53 @@
 			QV/XhvJQXVegQOsIahmeGk5G7rbAKnuFWCdRTM2S7Jo=
 			</data>
 		</dict>
+		<key>LogOutPopupView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cVu2PMZA+EvrUWzuDQp7ZpaYTnX5aQEaxT4Tec17HAM=
+			</data>
+		</dict>
+		<key>MenuView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9MJP0rSv3xQjQaoTgVhwr0ZuVAl0GBH4/tRmX7UE+hY=
+			</data>
+		</dict>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EDnFU2ILmG5pCxc8xEkJd0siJYUMEBno+crvTGo5VFA=
+			2mastS8F4QPB7xlnjEnFKOV24k2RUvBKql5gA/7ExQ0=
 			</data>
 		</dict>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GGGl+CnErvgA6h33odCw/xkz2TDaSDNlAZWSscLvnko=
+			N/cd5dbxDahWonwQICmHJW5H7/pY9PygPdCZYmNdpFs=
 			</data>
 		</dict>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CnC3kUeKI0dNNIns1Bv5Gq42XZaDK36sxi4ba6X0PfE=
+			YgOM3AKkR09Kp9RLAZwq3cuHXcaIO8mj6Ok8zDHGGdA=
 			</data>
 		</dict>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GGGl+CnErvgA6h33odCw/xkz2TDaSDNlAZWSscLvnko=
+			N/cd5dbxDahWonwQICmHJW5H7/pY9PygPdCZYmNdpFs=
 			</data>
 		</dict>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dXUMppSfQhZCAlRNj1LQFuSVg6ftNLoqvESz8kLWtC0=
+			H31u6AQkZSXLntFRajYogFJpsKglUH+twty4I7YEalM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1310,6 +1494,76 @@
 			ETfei9Yr+lpWBxMV1kBdlkd+Oytmv9ZM/yuXwlcSG50=
 			</data>
 		</dict>
+		<key>NewHeaderView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Kh4HpNUK0XRrTkS6GNwkeBngNkiXl4hWqIiuPahVM0o=
+			</data>
+		</dict>
+		<key>OneClickActivationSuccessView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p8NfEh+2AV99ISGNO7SBFXF1qnqh/UJSjQBR291pOIc=
+			</data>
+		</dict>
+		<key>OneClickAddCardCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LYSGvbGRyWp7nFC3nZKHCKlBxiAq0yqmiga9k0IRuJE=
+			</data>
+		</dict>
+		<key>OneClickAddCardView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pnn21o234Rb5OAWa5DYCryiGg6fhLuPUJMfcUosU5Wg=
+			</data>
+		</dict>
+		<key>OneClickBankCardView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QXCG0AcFWc39x3w8KJIxi/WeGOBilTEBHe9JuwFEZSk=
+			</data>
+		</dict>
+		<key>OneClickButtonView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/FizAdfrZgKJam1W1CKmsikvPW7Jp/xBLuk3dlA5l8M=
+			</data>
+		</dict>
+		<key>OneClickCardCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3C9M78D8JOzPwTeMc7jVsF17jmd2qP90sKxKj0oq3yg=
+			</data>
+		</dict>
+		<key>OneClickCheckBox.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+vSxSZ2BWuNsRTUo/69mECynWKGx4cdFfxG4og4f0c8=
+			</data>
+		</dict>
+		<key>OneClickHeaderView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E65ME+JLiJpQqLEfjr4U+/stwvXI2o7zyvugq5g7Jlg=
+			</data>
+		</dict>
+		<key>OneClickSavedCard.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9zSPAaBSnhpPZdrjBYILFP1v/aZwMZezlJgQig7bKy8=
+			</data>
+		</dict>
 		<key>Otp.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -1329,6 +1583,13 @@
 			<key>hash2</key>
 			<data>
 			xKNfGDC0cpGiAB2Ln/NnoMpyJ8gMMxusFJCIypVpssM=
+			</data>
+		</dict>
+		<key>OtpVerificationVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bW4RkCQyN9kL4xictv36M6NxkdLZ2VXFHjplF8n5xp0=
 			</data>
 		</dict>
 		<key>OtpViewVC.nib</key>
@@ -1370,7 +1631,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c7L5wkxmt/fpOGmODb3gTy8atUCGgaRX7kUalrIHTSc=
+			i6ojZShDMMwJSjq40DCcR7ZKaYXTWuA4Hsxk3Ndxw00=
 			</data>
 		</dict>
 		<key>PaymobCheckoutView.nib</key>
@@ -1378,6 +1639,13 @@
 			<key>hash2</key>
 			<data>
 			G0voRo8U4yGWsRpTwTieDNJl5ys7ScV85YOpiIsw3a4=
+			</data>
+		</dict>
+		<key>PhoneRowView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			moNIRrqaRanG7ZZISlB+0bpyTr/75yjKIDgCawgJw1A=
 			</data>
 		</dict>
 		<key>PostPay.storyboardc/Info.plist</key>
@@ -1420,6 +1688,13 @@
 			<key>hash2</key>
 			<data>
 			uGyDZgGBUX0nLHUr751Ib149fWHRzlDmxOTGG+B4O7U=
+			</data>
+		</dict>
+		<key>RetryAccountCreationVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gcFVt9fH/IolW4aacEP6DcgZv3nTMIUDFnQhx4PzXhM=
 			</data>
 		</dict>
 		<key>Souhoola.storyboardc/Info.plist</key>
@@ -1552,7 +1827,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lycvyqgy6j+ANYX75cSZEvtEKiU8NOOVbpvRynSPriU=
+			hIiRwKkxXxrXRGAFkpuouEzJNeNo4s1skk/BbpASUQs=
 			</data>
 		</dict>
 		<key>ValuEligibilityWebVC.nib</key>

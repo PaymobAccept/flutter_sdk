@@ -190,8 +190,12 @@ internal class PaymobCheckoutViewNative(
         emit(mapOf("type" to "transactionAccepted", "transactionDetails" to payResponse))
     }
 
-    override fun onFailure(msg: String?) {
+    override fun onFailure(msg: String) {
         emit(mapOf("type" to "transactionRejected", "message" to (msg ?: "")))
+    }
+
+    override fun onCancelled() {
+        emit(mapOf("type" to "transactionCancelled"))
     }
 
     override fun onPending() {

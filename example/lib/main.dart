@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
         buttonTextColor: Colors.white,
         saveCardDefault: true,
         showSaveCard: true,
-      ),
+      failureCallBackVersion: FailureCallBackVersion.V2,),
     );
     _talker.info(
       'Payment Status: ${result.status}, '

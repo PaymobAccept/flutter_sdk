@@ -9,6 +9,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+import com.paymob.paymob_sdk.FailureCallBackVersion
 import com.paymob.paymob_sdk.PaymobSdk
 import com.paymob.paymob_sdk.ui.PaymobSdkListener
 import android.app.Activity
@@ -69,6 +70,7 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
         val saveCardDefault = call.argument<Boolean>("saveCardDefault") ?: false
         val showSaveCard = call.argument<Boolean>("showSaveCard") ?: true
         val showTransactionResult = call.argument<Boolean>("showTransactionResult") ?: true
+        val failureCallBackVersion: String = call.argument<String>("failureCallBackVersion") ?: "V1"
 
         if (buttonTextColorData != null) {
             buttonTextColor = Color.argb(
@@ -109,6 +111,8 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
                 .showSaveCard(showSaveCard)
                 .saveCardByDefault(saveCardDefault)
                 .showTransactionResult(showTransactionResult)
+                .setFailureCallbackVersion(if (failureCallBackVersion.equals("v2", ignoreCase = true))
+                    FailureCallBackVersion.V2 else FailureCallBackVersion.V1)
                 .build()
 
             paymobSdk.start()
@@ -128,11 +132,17 @@ class PaymobFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, 
         pendingResult = null
     }
 
-    override fun onFailure(msg: String?) {
+    override fun onFailure(msg: String) {
         val resultMap = mapOf(
             "status" to "Failure",
             "errorMessage" to msg
         )
+        pendingResult?.success(resultMap)
+        pendingResult = null
+    }
+
+    override fun onCancelled() {
+        val resultMap = mapOf("status" to "Cancelled")
         pendingResult?.success(resultMap)
         pendingResult = null
     }
