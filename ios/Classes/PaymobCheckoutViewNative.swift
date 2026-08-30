@@ -298,6 +298,13 @@ extension PaymobCheckoutViewNative: PaymobSDKDelegate {
         ])
     }
 
+    func transactionCancelled() {
+
+        emit([
+            "type": "transactionCancelled"
+        ])
+    }
+
     func transactionPending() {
 
         emit([

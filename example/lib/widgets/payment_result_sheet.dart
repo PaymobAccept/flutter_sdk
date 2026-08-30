@@ -21,6 +21,7 @@ class PaymentResultSheet extends StatelessWidget {
     final (icon, label, color) = switch (result.status) {
       PaymentStatus.successful => (Icons.check_circle, 'Payment Accepted!', Colors.green),
       PaymentStatus.failure   => (Icons.cancel,        'Payment Rejected',  Colors.red),
+      PaymentStatus.cancelled => (Icons.cancel,        'Payment Cancelled', Colors.grey),
       PaymentStatus.pending    => (Icons.hourglass_top, 'Payment Pending',   Colors.orange),
     };
 

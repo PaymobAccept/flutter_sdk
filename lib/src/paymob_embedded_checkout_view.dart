@@ -97,6 +97,11 @@ class PaymobEmbeddedCheckoutController {
           errorMessage: message,
         ));
 
+      case 'transactionCancelled':
+        onPaymentResult?.call(PaymobPaymentResult(
+          status: PaymentStatus.cancelled,
+        ));
+
       case 'transactionPending':
         onPaymentResult?.call(PaymobPaymentResult(
           status: PaymentStatus.pending,
