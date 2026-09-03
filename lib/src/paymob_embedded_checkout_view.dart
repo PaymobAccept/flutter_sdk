@@ -246,25 +246,11 @@ class _PaymobEmbeddedCheckoutViewState
             fit: StackFit.expand,
             children: [
               _buildPlatformView(),
-              if (!_sdkReady) _buildLoadingPlaceholder(),
             ],
           ),
         ),
         SizedBox(height: _keyboardSpacer),
       ],
-    );
-  }
-
-  Widget _buildLoadingPlaceholder() {
-    final bg = widget.config.uiCustomization?.containerColor ?? const Color(0xFFFFFFFF);
-    final accent = widget.config.uiCustomization?.primaryColor ?? const Color(0xFF6750A4);
-    return Container(
-      color: bg,
-      child: Center(
-        child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(accent),
-        ),
-      ),
     );
   }
 

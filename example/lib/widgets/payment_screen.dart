@@ -35,6 +35,13 @@ class _PaymentScreenState extends State<PaymentScreen> {
     );
   }
 
+  Future<void> _handleSetPaymentKeys() async {
+    await _controller.setPaymentKeys(
+      publicKey: widget.publicKey,
+      clientSecret: widget.clientSecret,
+    );
+  }
+
   @override
   void dispose() {
     _controller.dispose();
@@ -78,6 +85,15 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ),
             ),
           ],
+        ),
+      ),
+      bottomNavigationBar: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(32.0),
+          child: FilledButton(
+            onPressed: _handleSetPaymentKeys,
+            child: const Text('Set Payment Keys'),
+          ),
         ),
       ),
     );

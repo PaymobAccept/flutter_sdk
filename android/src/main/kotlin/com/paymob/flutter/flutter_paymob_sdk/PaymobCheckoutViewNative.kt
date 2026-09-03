@@ -102,7 +102,10 @@ internal class PaymobCheckoutViewNative(
         val publicKey    = creationParams?.get("publicKey")    as? String
         val clientSecret = creationParams?.get("clientSecret") as? String
         if (publicKey != null && clientSecret != null) {
-            checkoutView.setPaymentKeys(publicKey, clientSecret)
+            // Delay setting keys slightly to ensure the view is ready and the loader triggers correctly
+            rootView.postDelayed({
+                checkoutView.setPaymentKeys(publicKey, clientSecret)
+            }, 10)
         }
     }
 
@@ -191,7 +194,7 @@ internal class PaymobCheckoutViewNative(
     }
 
     override fun onFailure(msg: String) {
-        emit(mapOf("type" to "transactionRejected", "message" to (msg ?: "")))
+        emit(mapOf("type" to "transactionRejected", "message" to msg))
     }
 
     override fun onCancelled() {
@@ -204,7 +207,6 @@ internal class PaymobCheckoutViewNative(
 
     override fun onListen(arguments: Any?, events: EventChannel.EventSink?) {
         eventSink = events
-        rootView.post { measureAndEmitHeight() }
     }
 
     override fun onCancel(arguments: Any?) {
