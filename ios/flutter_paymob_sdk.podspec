@@ -19,7 +19,8 @@ A Flutter plugin for integrating Paymob payment gateway with native Android and 
 
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
+    'FRAMEWORK_SEARCH_PATHS' => '$(PODS_XCFRAMEWORKS_BUILD_DIR)/flutter_paymob_sdk'
   }
   s.swift_version = '5.0'
 end
