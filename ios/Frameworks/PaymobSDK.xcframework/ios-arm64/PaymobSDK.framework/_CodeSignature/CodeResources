@@ -48,6 +48,14 @@
 		<data>
 		Id6gnMf55b6JB+eI0Tz+YJuqwnM=
 		</data>
+		<key>AmountInputView.nib/objects-14.0+.nib</key>
+		<data>
+		a2NuNX2jSLBZcHpe2HyIiYQRP+Q=
+		</data>
+		<key>AmountInputView.nib/runtime.nib</key>
+		<data>
+		OsU4MQDHSzai2Ayp2DYhDN62kdo=
+		</data>
 		<key>AmountView.nib</key>
 		<data>
 		/ZrWxhkhH2QXfXDoOErCs+3or+g=
@@ -66,7 +74,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		BxkleVGnCp0o1lDywWVHzs5pEOw=
+		uhhGttEHdd3QaFJNMVAgex1BGs0=
 		</data>
 		<key>AuthCardView.nib</key>
 		<data>
@@ -220,6 +228,10 @@
 		<data>
 		4TGQh/OH605NRwbHfAUmbBEUJq0=
 		</data>
+		<key>EmptyPlanView.nib</key>
+		<data>
+		1LIIhtpZvUnM7CzPbUDKebsWXAw=
+		</data>
 		<key>FPNCountryView.nib</key>
 		<data>
 		ve++ldyMeHh6aQiMTkiTYenVPGE=
@@ -235,6 +247,26 @@
 		<key>Forsa.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
 		FM36xcK5Z8EIySCzGTyDjcK+YPY=
+		</data>
+		<key>ForsaInstallmentPlanCell.nib</key>
+		<data>
+		9ZMfokXqKs5x+BqzAqc0l4Q0wbo=
+		</data>
+		<key>ForsaInstallmentPlanVC.nib</key>
+		<data>
+		MMz35UNZLGylOPQLZZEKwdkLddc=
+		</data>
+		<key>ForsaMobileVC.nib</key>
+		<data>
+		lvcFzy9d/HkvoK8pVbIAPKv5k2o=
+		</data>
+		<key>ForsaOfferCell.nib</key>
+		<data>
+		W76wXNm404iv5BACrGWJTqGPJVE=
+		</data>
+		<key>ForsaOffersVC.nib</key>
+		<data>
+		D57ktapS8J+r3ygzXjMHdnPhsmE=
 		</data>
 		<key>Halan.storyboardc/HalanVC.nib</key>
 		<data>
@@ -390,11 +422,11 @@
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		dcVtCGtuTeB18t2QlSUKJGU8h74=
+		aMUVTl6dOWUGJtl/l13YDTbUXX0=
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		gi7UUfNSfzJaLqKztKUf2rhAbmI=
+		e985TrUzDw2ORFjOsTJnsgqMS6c=
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -402,11 +434,11 @@
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		gi7UUfNSfzJaLqKztKUf2rhAbmI=
+		e985TrUzDw2ORFjOsTJnsgqMS6c=
 		</data>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rexAGew7m4U+a4AFanuGC0HjM+s=
+		X5VlXnvsXMDnfdn82y40JWd/mns=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -575,6 +607,10 @@
 		<key>RetryAccountCreationVC.nib</key>
 		<data>
 		WZaZu7cnjvbbXPw5s42bvZMHPpk=
+		</data>
+		<key>SelectionInputView.nib</key>
+		<data>
+		91tEv/KNBxS5wKnOX9ikYJtUwNU=
 		</data>
 		<key>Souhoola.storyboardc/Info.plist</key>
 		<data>
@@ -780,6 +816,20 @@
 			faKAe7Xgutv7KnTeBunxCWa8wxFGW9cJtMg9coTSNSc=
 			</data>
 		</dict>
+		<key>AmountInputView.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			t5E/kVSTCMnjDEy+V9g+ljKhpxruG5nK55UzyUdeQZU=
+			</data>
+		</dict>
+		<key>AmountInputView.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w/MUyPtXrGuDRlicNuDJZUanQB9ges2sULnq86jf3EM=
+			</data>
+		</dict>
 		<key>AmountView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -812,7 +862,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FSfkCaAM9cs+p+PoF8d3lPV0MRNMsT3SPpx8DyeElBQ=
+			v2Cpod0r4laKcvrm4AxMGnJtScF1vzcaG8pdaO0MLEQ=
 			</data>
 		</dict>
 		<key>AuthCardView.nib</key>
@@ -1081,6 +1131,13 @@
 			0/x6aB0EGmCqXsLyWnJUn4ZygQ3cKRczX+A/DrL9juU=
 			</data>
 		</dict>
+		<key>EmptyPlanView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YWovjCiaFqe+0sn/G817DXBhdQsVL/Q7tdUQ/XwxhbY=
+			</data>
+		</dict>
 		<key>FPNCountryView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1107,6 +1164,41 @@
 			<key>hash2</key>
 			<data>
 			TzsTbA06Bxdj3uWYP8Blh3P3T8CUnWDLPx32KgsNvUM=
+			</data>
+		</dict>
+		<key>ForsaInstallmentPlanCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xynkAF//gJehC9+wagMqd/R6jnLaPgHO5ncHBn3tD4Q=
+			</data>
+		</dict>
+		<key>ForsaInstallmentPlanVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y1ePE4vSwxy+ujIllmjeV5rL6MiCzxlWRcuHKSq1G3s=
+			</data>
+		</dict>
+		<key>ForsaMobileVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0cMr0ycySFfG0n1xZ5JeE3jaGSwpRTv8/vlDE1+CpEA=
+			</data>
+		</dict>
+		<key>ForsaOfferCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YRCAPUG57g6Cs/MZCjQhurli5bue/Fw8ottc4rvkwnc=
+			</data>
+		</dict>
+		<key>ForsaOffersVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W4cy7elOX8enLbAiZHuqCOl38jOrv1UJzUGkfGtkMbA=
 			</data>
 		</dict>
 		<key>Halan.storyboardc/HalanVC.nib</key>
@@ -1372,14 +1464,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pz5MVFssZfXcpNiuekObKN8Yy6KOnzTXOUO72LTdxhw=
+			VUMBceXCKAiMDO+hETNOJzot1xlE/R6V8/8wZV93LEU=
 			</data>
 		</dict>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N/cd5dbxDahWonwQICmHJW5H7/pY9PygPdCZYmNdpFs=
+			4+8zLqA9z+HrFCUf5tqRMgv5OiaKw2aLsC6jzs6V2MA=
 			</data>
 		</dict>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -1393,14 +1485,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N/cd5dbxDahWonwQICmHJW5H7/pY9PygPdCZYmNdpFs=
+			4+8zLqA9z+HrFCUf5tqRMgv5OiaKw2aLsC6jzs6V2MA=
 			</data>
 		</dict>
 		<key>Modules/PaymobSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2VU7X9BHgSEASLTMxkUGRCX/t7MTrUISrdtioNYWKw=
+			0d9XakvCtEJNgaV91sItofDfXoynTMbWd+SLnzYO5Cs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1695,6 +1787,13 @@
 			<key>hash2</key>
 			<data>
 			gcFVt9fH/IolW4aacEP6DcgZv3nTMIUDFnQhx4PzXhM=
+			</data>
+		</dict>
+		<key>SelectionInputView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TRDqnHKslpDp/xmjpej1FvVeIJ1eTzNJq+ZXue60bcI=
 			</data>
 		</dict>
 		<key>Souhoola.storyboardc/Info.plist</key>

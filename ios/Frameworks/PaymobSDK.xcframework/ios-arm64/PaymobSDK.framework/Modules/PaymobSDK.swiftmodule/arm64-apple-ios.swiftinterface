@@ -211,7 +211,7 @@ extension PaymobCheckoutView {
   @_Concurrency.MainActor @preconcurrency public func setPaymentKeys(publicKey: Swift.String?, clientSecret: Swift.String?)
 }
 extension PaymobCheckoutView {
-  @_Concurrency.MainActor @preconcurrency public func configure(uiCustomization: Swift.String?, showAddNewCard: Swift.Bool = true, payFromOutside: Swift.Bool = false, showSaveCard: Swift.Bool = true, saveCardDefault: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func configure(uiCustomization: Swift.String?, showAddNewCard: Swift.Bool = true, payFromOutside: Swift.Bool = false, failureCallBackVersion: FailureCallBackVersion = .V1, showSaveCard: Swift.Bool = true, saveCardDefault: Swift.Bool = false)
 }
 @objc @_Concurrency.MainActor @preconcurrency open class CheckboxButtonContainerView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public var buttonContainer: CheckboxButtonContainer {
