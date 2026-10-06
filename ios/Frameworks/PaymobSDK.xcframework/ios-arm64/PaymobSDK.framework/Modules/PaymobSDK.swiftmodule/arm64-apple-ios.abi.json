@@ -22442,6 +22442,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaymobSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -46736,6 +46746,43 @@
             "moduleName": "PaymobSDK"
           },
           {
+            "kind": "Var",
+            "name": "Jaywan",
+            "printedName": "Jaywan",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymobSDK.CardType.Type) -> PaymobSDK.CardType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardType",
+                    "printedName": "PaymobSDK.CardType",
+                    "usr": "s:9PaymobSDK8CardTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymobSDK.CardType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardType",
+                        "printedName": "PaymobSDK.CardType",
+                        "usr": "s:9PaymobSDK8CardTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9PaymobSDK8CardTypeO6JaywanyA2CmF",
+            "mangledName": "$s9PaymobSDK8CardTypeO6JaywanyA2CmF",
+            "moduleName": "PaymobSDK"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -50690,7 +50737,7 @@
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/BaseObjects\/PaymobSDKViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2048,
+      "offset": 2080,
       "length": 5,
       "value": "false"
     },
@@ -54048,6 +54095,27 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/SDK Files\/countryBins\/CountryBinHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 151,
+      "length": 6,
+      "value": "\"Maal\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/SDK Files\/countryBins\/CountryBinHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 177,
+      "length": 9,
+      "value": "\"OmanNet\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/SDK Files\/countryBins\/CountryBinHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 8,
+      "value": "\"Jaywan\""
+    },
+    {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Scenes\/Tabby\/Model\/TabbyPaymentResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 396,
@@ -54416,418 +54484,432 @@
       "kind": "StringLiteral",
       "offset": 2752,
       "length": 6,
+      "value": "\"Maal\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 2825,
+      "length": 8,
+      "value": "\"Jaywan\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 2898,
+      "length": 6,
       "value": "\"Visa\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 2840,
+      "offset": 2986,
       "length": 19,
       "value": "\"nativeExpAmexIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 2937,
+      "offset": 3083,
       "length": 19,
       "value": "\"nativeExpVisaIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3040,
+      "offset": 3186,
       "length": 25,
       "value": "\"nativeExpMasterCardIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3143,
+      "offset": 3289,
       "length": 19,
       "value": "\"nativeExpCardIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3241,
+      "offset": 3387,
       "length": 15,
       "value": "\"selectedRadio\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3336,
+      "offset": 3482,
       "length": 17,
       "value": "\"unselectedRadio\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3440,
+      "offset": 3586,
       "length": 18,
       "value": "\"bankInstallments\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3531,
+      "offset": 3677,
       "length": 19,
       "value": "\"ic_one_click_prim\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3634,
+      "offset": 3780,
       "length": 21,
       "value": "\"mostPopularSelected\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3741,
+      "offset": 3887,
       "length": 23,
       "value": "\"mostPopularUnSelected\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3837,
+      "offset": 3983,
       "length": 27,
       "value": "\"hugeicons_discount-tag-02\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 3937,
+      "offset": 4083,
       "length": 16,
       "value": "\"cash_Back_icon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4027,
+      "offset": 4173,
       "length": 15,
       "value": "\"cash_back_img\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4117,
+      "offset": 4263,
       "length": 22,
       "value": "\"cash_back_background\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4264,
+      "offset": 4410,
       "length": 10,
       "value": "\"OffWhite\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4349,
+      "offset": 4495,
       "length": 24,
       "value": "\"TransaparentBackground\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4439,
+      "offset": 4585,
       "length": 15,
       "value": "\"GraySeperator\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4525,
+      "offset": 4671,
       "length": 20,
       "value": "\"BlueBorderSelected\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4617,
+      "offset": 4763,
       "length": 21,
       "value": "\"BlueBorderSelected2\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4712,
+      "offset": 4858,
       "length": 23,
       "value": "\"BlueBackgrounSelected\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4796,
+      "offset": 4942,
       "length": 10,
       "value": "\"GrayText\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4880,
+      "offset": 5026,
       "length": 23,
       "value": "\"ValidButtonBackground\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 4979,
+      "offset": 5125,
       "length": 25,
       "value": "\"InvalidButtonBackground\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5072,
+      "offset": 5218,
       "length": 17,
       "value": "\"ValidButtonText\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5159,
+      "offset": 5305,
       "length": 19,
       "value": "\"InvalidButtonText\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5245,
+      "offset": 5391,
       "length": 16,
       "value": "\"ValidLabelText\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5330,
+      "offset": 5476,
       "length": 18,
       "value": "\"InvalidLabelText\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5420,
+      "offset": 5566,
       "length": 12,
       "value": "\"Primary500\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5494,
+      "offset": 5640,
       "length": 11,
       "value": "\"Primary25\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5568,
+      "offset": 5714,
       "length": 12,
       "value": "\"Primary200\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5640,
+      "offset": 5786,
       "length": 9,
       "value": "\"Gray200\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5709,
+      "offset": 5855,
       "length": 9,
       "value": "\"Gray300\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5778,
+      "offset": 5924,
       "length": 9,
       "value": "\"Gray500\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5847,
+      "offset": 5993,
       "length": 9,
       "value": "\"Gray700\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5916,
+      "offset": 6062,
       "length": 9,
       "value": "\"Gray900\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 5991,
+      "offset": 6137,
       "length": 15,
       "value": "\"DiscountColor\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6109,
+      "offset": 6255,
       "length": 47,
       "value": "\"Something went wrong, Please try again later.\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6190,
+      "offset": 6336,
       "length": 43,
       "value": "\"An error ocurred, Please try again later.\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6279,
+      "offset": 6425,
       "length": 109,
       "value": "\"Your Internet Connection seems to be down at the moment, Please check your Internet Connection to continue.\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6441,
+      "offset": 6587,
       "length": 59,
       "value": "\"Your payment has been declined due to insufficient funds.\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6548,
+      "offset": 6694,
       "length": 30,
       "value": "\"Thank you for your purchase!\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6622,
+      "offset": 6768,
       "length": 157,
       "value": "\"Your payment is pending due to an issue. You will be redirected to the merchant's website or app, where you will need to initiate the payment process again\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6820,
+      "offset": 6966,
       "length": 20,
       "value": "\"Payment successful\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6877,
+      "offset": 7023,
       "length": 17,
       "value": "\"Payment pending\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6932,
+      "offset": 7078,
       "length": 18,
       "value": "\"Payment declined\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 6984,
+      "offset": 7130,
       "length": 15,
       "value": "\"Payment done \""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7041,
+      "offset": 7187,
       "length": 27,
       "value": "\"& \nClick account created\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7144,
+      "offset": 7290,
       "length": 44,
       "value": "\"Card Details would be saved for future use\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7227,
+      "offset": 7373,
       "length": 26,
       "value": "\"Save card for future use\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7323,
+      "offset": 7469,
       "length": 5,
       "value": "\"SDK\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7396,
+      "offset": 7542,
       "length": 10,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7540,
+      "offset": 7686,
       "length": 34,
       "value": "\"international-staging.paymob.com\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7736,
+      "offset": 7882,
       "length": 25,
       "value": "\"accept-alpha.paymob.com\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7813,
+      "offset": 7959,
       "length": 41,
       "value": "\"https:\/\/alpha.customer.paymob.com\/login\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7977,
+      "offset": 8123,
       "length": 16,
       "value": "\"uae.paymob.com\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8069,
+      "offset": 8215,
       "length": 21,
       "value": "\"pakistan.paymob.com\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8158,
+      "offset": 8304,
       "length": 17,
       "value": "\"oman.paymob.com\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8245,
+      "offset": 8391,
       "length": 19,
       "value": "\"accept.paymob.com\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Helpers\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8336,
+      "offset": 8482,
       "length": 16,
       "value": "\"ksa.paymob.com\""
     },
@@ -58425,21 +58507,21 @@
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Embeddables\/Amount\/AmountVC.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1749,
       "length": 14,
       "value": "\"Total Amount\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Embeddables\/Amount\/AmountVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1695,
+      "offset": 1785,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Desktop\/IOS_Projects\/paymobsdk-ios\/PaymobSDK\/Embeddables\/Amount\/AmountVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1723,
+      "offset": 1813,
       "length": 5,
       "value": "false"
     },
@@ -64249,1470 +64331,1477 @@
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19019,
+      "offset": 19027,
+      "length": 8,
+      "value": "\"Jaywan\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19149,
       "length": 4,
       "value": "\"KE\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19137,
+      "offset": 19267,
       "length": 4,
       "value": "\"KG\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19255,
+      "offset": 19385,
       "length": 4,
       "value": "\"KH\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19373,
+      "offset": 19503,
       "length": 4,
       "value": "\"KI\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19491,
+      "offset": 19621,
       "length": 4,
       "value": "\"KM\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19609,
+      "offset": 19739,
       "length": 4,
       "value": "\"KN\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19727,
+      "offset": 19857,
       "length": 4,
       "value": "\"KP\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19845,
+      "offset": 19975,
       "length": 4,
       "value": "\"KR\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19963,
+      "offset": 20093,
       "length": 4,
       "value": "\"KW\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20081,
+      "offset": 20211,
       "length": 4,
       "value": "\"KY\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20199,
+      "offset": 20329,
       "length": 4,
       "value": "\"KZ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20317,
+      "offset": 20447,
       "length": 4,
       "value": "\"LA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20435,
+      "offset": 20565,
       "length": 4,
       "value": "\"LB\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20553,
+      "offset": 20683,
       "length": 4,
       "value": "\"LC\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20675,
+      "offset": 20805,
       "length": 6,
       "value": "\"LGBT\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20795,
+      "offset": 20925,
       "length": 4,
       "value": "\"LI\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20913,
+      "offset": 21043,
       "length": 4,
       "value": "\"LK\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21031,
+      "offset": 21161,
       "length": 4,
       "value": "\"LR\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21149,
+      "offset": 21279,
       "length": 4,
       "value": "\"LS\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21267,
+      "offset": 21397,
       "length": 4,
       "value": "\"LT\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21385,
+      "offset": 21515,
       "length": 4,
       "value": "\"LU\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21503,
+      "offset": 21633,
       "length": 4,
       "value": "\"LV\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21621,
+      "offset": 21751,
       "length": 4,
       "value": "\"LY\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21743,
+      "offset": 21873,
       "length": 6,
       "value": "\"Lock\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21863,
+      "offset": 21993,
       "length": 4,
       "value": "\"MA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21981,
+      "offset": 22111,
       "length": 4,
       "value": "\"MC\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22099,
+      "offset": 22229,
       "length": 4,
       "value": "\"MD\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22217,
+      "offset": 22347,
       "length": 4,
       "value": "\"ME\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22335,
+      "offset": 22465,
       "length": 4,
       "value": "\"MF\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22453,
+      "offset": 22583,
       "length": 4,
       "value": "\"MG\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22571,
+      "offset": 22701,
       "length": 4,
       "value": "\"MH\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22689,
+      "offset": 22819,
       "length": 4,
       "value": "\"MK\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22807,
+      "offset": 22937,
       "length": 4,
       "value": "\"ML\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22925,
+      "offset": 23055,
       "length": 4,
       "value": "\"MM\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23043,
+      "offset": 23173,
       "length": 4,
       "value": "\"MN\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23161,
+      "offset": 23291,
       "length": 4,
       "value": "\"MO\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23279,
+      "offset": 23409,
       "length": 4,
       "value": "\"MP\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23397,
+      "offset": 23527,
       "length": 4,
       "value": "\"MQ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23515,
+      "offset": 23645,
       "length": 4,
       "value": "\"MR\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23633,
+      "offset": 23763,
       "length": 4,
       "value": "\"MS\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23751,
+      "offset": 23881,
       "length": 4,
       "value": "\"MT\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23869,
+      "offset": 23999,
       "length": 4,
       "value": "\"MU\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23987,
+      "offset": 24117,
       "length": 4,
       "value": "\"MV\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24105,
+      "offset": 24235,
       "length": 4,
       "value": "\"MW\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24223,
+      "offset": 24353,
       "length": 4,
       "value": "\"MX\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24341,
+      "offset": 24471,
       "length": 4,
       "value": "\"MY\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24459,
+      "offset": 24589,
       "length": 4,
       "value": "\"MZ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24581,
+      "offset": 24711,
       "length": 6,
       "value": "\"Mada\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24711,
+      "offset": 24841,
       "length": 9,
       "value": "\"Maestro\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24850,
+      "offset": 24980,
       "length": 12,
       "value": "\"MasterCard\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24992,
+      "offset": 25122,
       "length": 12,
       "value": "\"Mastercard\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25124,
+      "offset": 25254,
       "length": 7,
       "value": "\"Meeza\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25245,
+      "offset": 25375,
       "length": 4,
       "value": "\"NA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25363,
+      "offset": 25493,
       "length": 4,
       "value": "\"NC\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25481,
+      "offset": 25611,
       "length": 4,
       "value": "\"NE\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25599,
+      "offset": 25729,
       "length": 4,
       "value": "\"NF\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25717,
+      "offset": 25847,
       "length": 4,
       "value": "\"NG\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25835,
+      "offset": 25965,
       "length": 4,
       "value": "\"NI\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25953,
+      "offset": 26083,
       "length": 4,
       "value": "\"NL\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26071,
+      "offset": 26201,
       "length": 4,
       "value": "\"NO\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26189,
+      "offset": 26319,
       "length": 4,
       "value": "\"NP\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26307,
+      "offset": 26437,
       "length": 4,
       "value": "\"NR\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26425,
+      "offset": 26555,
       "length": 4,
       "value": "\"NU\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26543,
+      "offset": 26673,
       "length": 4,
       "value": "\"NZ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26661,
+      "offset": 26791,
       "length": 4,
       "value": "\"OM\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26789,
+      "offset": 26919,
       "length": 9,
       "value": "\"OmanNet\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26924,
+      "offset": 27054,
       "length": 10,
       "value": "\"OmanNet2\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27048,
+      "offset": 27178,
       "length": 4,
       "value": "\"PA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27166,
+      "offset": 27296,
       "length": 4,
       "value": "\"PE\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27284,
+      "offset": 27414,
       "length": 4,
       "value": "\"PF\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27402,
+      "offset": 27532,
       "length": 4,
       "value": "\"PG\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27520,
+      "offset": 27650,
       "length": 4,
       "value": "\"PH\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27638,
+      "offset": 27768,
       "length": 4,
       "value": "\"PK\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27756,
+      "offset": 27886,
       "length": 4,
       "value": "\"PL\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27874,
+      "offset": 28004,
       "length": 4,
       "value": "\"PM\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27992,
+      "offset": 28122,
       "length": 4,
       "value": "\"PN\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28110,
+      "offset": 28240,
       "length": 4,
       "value": "\"PR\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28228,
+      "offset": 28358,
       "length": 4,
       "value": "\"PS\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28346,
+      "offset": 28476,
       "length": 4,
       "value": "\"PT\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28464,
+      "offset": 28594,
       "length": 4,
       "value": "\"PW\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28582,
+      "offset": 28712,
       "length": 4,
       "value": "\"PY\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28708,
+      "offset": 28838,
       "length": 8,
       "value": "\"Paymob\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28840,
+      "offset": 28970,
       "length": 9,
       "value": "\"Pending\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28963,
+      "offset": 29093,
       "length": 4,
       "value": "\"QA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29081,
+      "offset": 29211,
       "length": 4,
       "value": "\"RE\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29199,
+      "offset": 29329,
       "length": 4,
       "value": "\"RO\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29317,
+      "offset": 29447,
       "length": 4,
       "value": "\"RS\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29435,
+      "offset": 29565,
       "length": 4,
       "value": "\"RU\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29553,
+      "offset": 29683,
       "length": 4,
       "value": "\"RW\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29671,
+      "offset": 29801,
       "length": 4,
       "value": "\"SA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29789,
+      "offset": 29919,
       "length": 4,
       "value": "\"SB\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29907,
+      "offset": 30037,
       "length": 4,
       "value": "\"SC\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30025,
+      "offset": 30155,
       "length": 4,
       "value": "\"SD\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30143,
+      "offset": 30273,
       "length": 4,
       "value": "\"SE\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30261,
+      "offset": 30391,
       "length": 4,
       "value": "\"SG\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30379,
+      "offset": 30509,
       "length": 4,
       "value": "\"SH\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30497,
+      "offset": 30627,
       "length": 4,
       "value": "\"SI\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30615,
+      "offset": 30745,
       "length": 4,
       "value": "\"SJ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30733,
+      "offset": 30863,
       "length": 4,
       "value": "\"SK\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30851,
+      "offset": 30981,
       "length": 4,
       "value": "\"SL\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30969,
+      "offset": 31099,
       "length": 4,
       "value": "\"SM\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31087,
+      "offset": 31217,
       "length": 4,
       "value": "\"SN\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31205,
+      "offset": 31335,
       "length": 4,
       "value": "\"SO\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31323,
+      "offset": 31453,
       "length": 4,
       "value": "\"SR\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31441,
+      "offset": 31571,
       "length": 4,
       "value": "\"SS\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31559,
+      "offset": 31689,
       "length": 4,
       "value": "\"ST\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31677,
+      "offset": 31807,
       "length": 4,
       "value": "\"SV\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31795,
+      "offset": 31925,
       "length": 4,
       "value": "\"SX\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31913,
+      "offset": 32043,
       "length": 4,
       "value": "\"SY\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32031,
+      "offset": 32161,
       "length": 4,
       "value": "\"SZ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32159,
+      "offset": 32289,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32282,
+      "offset": 32412,
       "length": 4,
       "value": "\"TC\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32400,
+      "offset": 32530,
       "length": 4,
       "value": "\"TD\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32518,
+      "offset": 32648,
       "length": 4,
       "value": "\"TF\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32636,
+      "offset": 32766,
       "length": 4,
       "value": "\"TG\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32754,
+      "offset": 32884,
       "length": 4,
       "value": "\"TH\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32872,
+      "offset": 33002,
       "length": 4,
       "value": "\"TJ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32990,
+      "offset": 33120,
       "length": 4,
       "value": "\"TK\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33108,
+      "offset": 33238,
       "length": 4,
       "value": "\"TL\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33226,
+      "offset": 33356,
       "length": 4,
       "value": "\"TM\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33344,
+      "offset": 33474,
       "length": 4,
       "value": "\"TN\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33462,
+      "offset": 33592,
       "length": 4,
       "value": "\"TO\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33580,
+      "offset": 33710,
       "length": 4,
       "value": "\"TR\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33698,
+      "offset": 33828,
       "length": 4,
       "value": "\"TT\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33816,
+      "offset": 33946,
       "length": 4,
       "value": "\"TV\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33934,
+      "offset": 34064,
       "length": 4,
       "value": "\"TW\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34052,
+      "offset": 34182,
       "length": 4,
       "value": "\"TZ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34174,
+      "offset": 34304,
       "length": 6,
       "value": "\"Tick\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34294,
+      "offset": 34424,
       "length": 4,
       "value": "\"UA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34412,
+      "offset": 34542,
       "length": 4,
       "value": "\"UG\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34530,
+      "offset": 34660,
       "length": 4,
       "value": "\"UM\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34648,
+      "offset": 34778,
       "length": 4,
       "value": "\"US\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34772,
+      "offset": 34902,
       "length": 7,
       "value": "\"US-CA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34893,
+      "offset": 35023,
       "length": 4,
       "value": "\"UY\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35011,
+      "offset": 35141,
       "length": 4,
       "value": "\"UZ\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35139,
+      "offset": 35269,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35262,
+      "offset": 35392,
       "length": 4,
       "value": "\"VA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35380,
+      "offset": 35510,
       "length": 4,
       "value": "\"VC\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35498,
+      "offset": 35628,
       "length": 4,
       "value": "\"VE\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35616,
+      "offset": 35746,
       "length": 4,
       "value": "\"VG\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35734,
+      "offset": 35864,
       "length": 4,
       "value": "\"VI\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35852,
+      "offset": 35982,
       "length": 4,
       "value": "\"VN\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35970,
+      "offset": 36100,
       "length": 4,
       "value": "\"VU\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36092,
+      "offset": 36222,
       "length": 6,
       "value": "\"Visa\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36212,
+      "offset": 36342,
       "length": 4,
       "value": "\"WF\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36330,
+      "offset": 36460,
       "length": 4,
       "value": "\"WS\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36448,
+      "offset": 36578,
       "length": 4,
       "value": "\"XK\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36566,
+      "offset": 36696,
       "length": 4,
       "value": "\"YE\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36684,
+      "offset": 36814,
       "length": 4,
       "value": "\"YT\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36802,
+      "offset": 36932,
       "length": 4,
       "value": "\"ZA\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36920,
+      "offset": 37050,
       "length": 4,
       "value": "\"ZM\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37038,
+      "offset": 37168,
       "length": 4,
       "value": "\"ZW\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37160,
+      "offset": 37290,
       "length": 6,
       "value": "\"aman\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37417,
+      "offset": 37547,
       "length": 10,
       "value": "\"applePay\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37570,
+      "offset": 37700,
       "length": 19,
       "value": "\"bank installments\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37856,
+      "offset": 37986,
       "length": 6,
       "value": "\"card\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37998,
+      "offset": 38128,
       "length": 16,
       "value": "\"cash_Back_icon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38162,
+      "offset": 38292,
       "length": 22,
       "value": "\"cash_back_background\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38318,
+      "offset": 38448,
       "length": 15,
       "value": "\"cash_back_img\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38466,
+      "offset": 38596,
       "length": 14,
       "value": "\"chevron-down\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38619,
+      "offset": 38749,
       "length": 17,
       "value": "\"circle-question\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38760,
+      "offset": 38890,
       "length": 9,
       "value": "\"contact\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38900,
+      "offset": 39030,
       "length": 13,
       "value": "\"credit-card\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39047,
+      "offset": 39177,
       "length": 14,
       "value": "\"dashedBorder\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39189,
+      "offset": 39319,
       "length": 11,
       "value": "\"easypaisa\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39326,
+      "offset": 39456,
       "length": 10,
       "value": "\"envelope\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39463,
+      "offset": 39593,
       "length": 11,
       "value": "\"excl-mark\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39602,
+      "offset": 39732,
       "length": 11,
       "value": "\"flagEgypt\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39733,
+      "offset": 39863,
       "length": 7,
       "value": "\"forsa\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39862,
+      "offset": 39992,
       "length": 8,
       "value": "\"forsa1\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39990,
+      "offset": 40120,
       "length": 7,
       "value": "\"halan\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40154,
+      "offset": 40284,
       "length": 27,
       "value": "\"hugeicons_discount-tag-02\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40315,
+      "offset": 40445,
       "length": 15,
       "value": "\"ic_Paymob_new\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40455,
+      "offset": 40585,
       "length": 10,
       "value": "\"ic_arrow\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40592,
+      "offset": 40722,
       "length": 11,
       "value": "\"ic_logout\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40726,
+      "offset": 40856,
       "length": 9,
       "value": "\"ic_menu\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40876,
+      "offset": 41006,
       "length": 19,
       "value": "\"ic_one_click_prim\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41034,
+      "offset": 41164,
       "length": 18,
       "value": "\"ic_one_click_sec\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41179,
+      "offset": 41309,
       "length": 11,
       "value": "\"ic_portal\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41319,
+      "offset": 41449,
       "length": 12,
       "value": "\"ic_warning\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41456,
+      "offset": 41586,
       "length": 10,
       "value": "\"ic_xmark\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41592,
+      "offset": 41722,
       "length": 10,
       "value": "\"instapay\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41728,
+      "offset": 41858,
       "length": 10,
       "value": "\"jazzcash\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41856,
+      "offset": 41986,
       "length": 6,
       "value": "\"mail\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41980,
+      "offset": 42110,
       "length": 6,
       "value": "\"mogo\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42134,
+      "offset": 42264,
       "length": 21,
       "value": "\"mostPopularSelected\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42307,
+      "offset": 42437,
       "length": 23,
       "value": "\"mostPopularUnSelected\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42474,
+      "offset": 42604,
       "length": 19,
       "value": "\"nativeExpAmexIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42637,
+      "offset": 42767,
       "length": 19,
       "value": "\"nativeExpCardIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42812,
+      "offset": 42942,
       "length": 25,
       "value": "\"nativeExpMasterCardIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42981,
+      "offset": 43111,
       "length": 19,
       "value": "\"nativeExpVisaIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43129,
+      "offset": 43259,
       "length": 12,
       "value": "\"new-Paymob\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43277,
+      "offset": 43407,
       "length": 15,
       "value": "\"newBackButton\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43430,
+      "offset": 43560,
       "length": 16,
       "value": "\"newCloseButton\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43564,
+      "offset": 43694,
       "length": 6,
       "value": "\"nift\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43696,
+      "offset": 43826,
       "length": 10,
       "value": "\"plusIcon\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43830,
+      "offset": 43960,
       "length": 9,
       "value": "\"postpay\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43963,
+      "offset": 44093,
       "length": 9,
       "value": "\"premium\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 44108,
+      "offset": 44238,
       "length": 15,
       "value": "\"selectedRadio\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 44249,
+      "offset": 44379,
       "length": 10,
       "value": "\"souhoola\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 44381,
+      "offset": 44511,
       "length": 8,
       "value": "\"spotty\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 44509,
+      "offset": 44639,
       "length": 7,
       "value": "\"sympl\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 44636,
+      "offset": 44766,
       "length": 7,
       "value": "\"tabby\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 44765,
+      "offset": 44895,
       "length": 8,
       "value": "\"tamara\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 44912,
+      "offset": 45042,
       "length": 17,
       "value": "\"ticket-discount\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 45200,
+      "offset": 45330,
       "length": 17,
       "value": "\"unselectedRadio\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 45335,
+      "offset": 45465,
       "length": 6,
       "value": "\"valu\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 45592,
+      "offset": 45722,
       "length": 10,
       "value": "\"visacard\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 45724,
+      "offset": 45854,
       "length": 8,
       "value": "\"wallet\""
     },
     {
       "filePath": "\/Users\/mahmoudyousef\/Library\/Developer\/Xcode\/DerivedData\/PaymobSDK-ambevhcatywzqwckhzmabrixcdxj\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymobSDK\/IntermediateBuildFilesPath\/PaymobSDK.build\/Release-iphoneos\/PaymobSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 45856,
+      "offset": 45986,
       "length": 9,
       "value": "\"warning\""
     }

@@ -1026,7 +1026,7 @@ public enum FPNCountryCode : Swift.String {
   @objc deinit
 }
 public enum CardType : Swift.String, Swift.Codable, Swift.CaseIterable {
-  case Unknown, OmanNet, JCB, Meeza, Maestro, Amex, Visa, MasterCard
+  case Unknown, OmanNet, JCB, Meeza, Maestro, Amex, Visa, MasterCard, Jaywan
   public init?(rawValue: Swift.String)
   public typealias AllCases = [CardType]
   public typealias RawValue = Swift.String
